@@ -74,7 +74,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto 1fr;
-    grid-template-areas: "title-area" "portfolio-area" "footer-area";
+    grid-template-areas: "h-card" "portfolio-area" "footer-area";
     grid-row-gap: 3em;
   }
 
@@ -95,7 +95,7 @@
     grid-template-columns: 1fr 9fr;
     grid-template-rows: 1fr;
     grid-template-areas: "avatar" "content";
-    grid-area: title-area;
+    grid-area: h-card;
     grid-column-gap: 1em;
 
   }
@@ -131,7 +131,7 @@
 <body>
   <div class="grid-container">
     <div class="h-card">
-      <img class="u-photo" src="images/avatar.jpg"/>
+      <img class="u-photo" src="http://gabrielcornish.com/images/avatar.jpg"/>
       <div class="bio">
         <a href="http://www.gabrielcornish.com" rel="me" class="u-url"><h1>Gabriel Cornish</h1></a>
         <p class="p-note">
