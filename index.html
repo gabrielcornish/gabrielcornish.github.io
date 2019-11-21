@@ -44,14 +44,10 @@
     margin-bottom: 1em;
   }
 
-  .avatar{
+  .u-photo{
     border-radius: 50%;
     width: 100%;
     margin: 0 auto;
-  }
-
-  .u-photo{
-    display: none;
   }
 
   .game-entry{
@@ -94,7 +90,7 @@
 
   .footer-area { grid-area: footer-area; }
 
-  .title-area { 
+  .h-card { 
     display: grid;
     grid-template-columns: 1fr 9fr;
     grid-template-rows: 1fr;
@@ -104,11 +100,11 @@
 
   }
 
-  .title-area h1{
+  .h-card h1{
     margin: 0em;    
   }
 
-  .title-area p{
+  .h-card p{
       margin-top: 0.2em;
       margin-bottom: 0.5em;    
     }
@@ -134,10 +130,9 @@
 </head>
 <body>
   <div class="grid-container">
-    <div class="title-area">
-      <img class="avatar" src="images/avatar.jpg"/>
-      <div class="h-card">
-        <img class="u-photo" src="images/avatar.jpg"/>
+    <div class="h-card">
+      <img class="u-photo" src="images/avatar.jpg"/>
+      <div class="bio">
         <a href="http://www.gabrielcornish.com" rel="me" class="u-url"><h1>Gabriel Cornish</h1></a>
         <p class="p-note">
           Hey, I'm <span class="p-name">Gabriel Cornish</span>. I design and develop games.
