@@ -1,0 +1,41 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://LevelOne.gd" type="Script" id=1]
+[ext_resource path="res://CPUParticles2D.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Background.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Talker.tscn" type="PackedScene" id=4]
+[ext_resource path="res://vertical_goal.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=6]
+[ext_resource path="res://horizontal_goal.tscn" type="PackedScene" id=7]
+
+[node name="LevelThree" type="Node2D"]
+script = ExtResource( 1 )
+score_to_pass = 3
+next_level = "LevelOne.tscn"
+
+[node name="Node" parent="." instance=ExtResource( 2 )]
+
+[node name="Background" parent="." instance=ExtResource( 3 )]
+
+[node name="Talker" parent="." instance=ExtResource( 4 )]
+position = Vector2( 357.058, 139.071 )
+animStart = "thirdBubble"
+
+[node name="vertical_goal" parent="." instance=ExtResource( 5 )]
+position = Vector2( 135, 360.031 )
+
+[node name="vertical_goal2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1150, 605 )
+
+[node name="Player" parent="." instance=ExtResource( 6 )]
+position = Vector2( 135, 601.174 )
+
+[node name="Player2" parent="." instance=ExtResource( 6 )]
+position = Vector2( 659.959, 360 )
+horizontal = true
+
+[node name="Player3" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1150, 106.513 )
+
+[node name="horizontal_goal" parent="." instance=ExtResource( 7 )]
+position = Vector2( 387.116, 360 )

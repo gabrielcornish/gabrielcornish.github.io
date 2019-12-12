@@ -1,0 +1,33 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://MainGame.gd" type="Script" id=1]
+[ext_resource path="res://Background.tscn" type="PackedScene" id=2]
+[ext_resource path="res://SquareRuneOne.tscn" type="PackedScene" id=3]
+[ext_resource path="res://CircleRuneOne.tscn" type="PackedScene" id=4]
+[ext_resource path="res://SquareRuneTwo.tscn" type="PackedScene" id=5]
+[ext_resource path="res://YouWin.tscn" type="PackedScene" id=6]
+[ext_resource path="res://YouLost.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Instructions.tscn" type="PackedScene" id=8]
+
+[node name="MainGame" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Background" parent="." instance=ExtResource( 2 )]
+
+[node name="SquareRuneOne" parent="." instance=ExtResource( 3 )]
+position = Vector2( 81.0282, 101.435 )
+
+[node name="CircleRuneOne" parent="." instance=ExtResource( 4 )]
+position = Vector2( 180.663, 170.459 )
+
+[node name="SquareRuneTwo" parent="." instance=ExtResource( 5 )]
+position = Vector2( 291.101, 90.6315 )
+
+[node name="YouWin" parent="." instance=ExtResource( 6 )]
+position = Vector2( 137.448, 118.241 )
+
+[node name="YouLost" parent="." instance=ExtResource( 7 )]
+position = Vector2( 137.448, 118.241 )
+
+[node name="Instructions" parent="." instance=ExtResource( 8 )]
+position = Vector2( 129.728, 5 )

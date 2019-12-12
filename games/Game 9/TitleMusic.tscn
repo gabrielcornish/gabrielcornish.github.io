@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sound/Drink_Title.wav" type="AudioStream" id=1]
+[ext_resource path="res://Main Menu/TitleMusic.gd" type="Script" id=2]
+
+[node name="TitleMusic" type="AudioStreamPlayer"]
+stream = ExtResource( 1 )
+script = ExtResource( 2 )

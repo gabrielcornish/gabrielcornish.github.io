@@ -1,0 +1,49 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://sprites/water_bucket.png" type="Texture" id=1]
+[ext_resource path="res://Water.gd" type="Script" id=2]
+[ext_resource path="res://Ready Particles.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Sound/pickup.wav" type="AudioStream" id=4]
+[ext_resource path="res://Sound/ready.wav" type="AudioStream" id=5]
+[ext_resource path="res://Sound/empty drop off.wav" type="AudioStream" id=6]
+[ext_resource path="res://Sound/dropoff.wav" type="AudioStream" id=7]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 4.00957, 3.98289 )
+
+[node name="Water" type="Sprite"]
+texture = ExtResource( 1 )
+hframes = 5
+script = ExtResource( 2 )
+
+[node name="Area2D" type="Area2D" parent="."]
+editor/display_folded = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource( 1 )
+
+[node name="RefillTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="Ready Particles" parent="." instance=ExtResource( 3 )]
+visible = false
+position = Vector2( -2, 0 )
+
+[node name="Picked Up Audio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -10.0
+
+[node name="Ready Audio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -10.0
+
+[node name="Empty Drop Off" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -10.0
+
+[node name="Drop Off Audio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = -10.0
+[connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
+[connection signal="area_exited" from="Area2D" to="." method="_on_Area2D_area_exited"]
+[connection signal="timeout" from="RefillTimer" to="." method="_on_RefillTimer_timeout"]

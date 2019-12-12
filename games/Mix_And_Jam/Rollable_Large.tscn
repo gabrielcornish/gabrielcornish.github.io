@@ -1,0 +1,32 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Rollable.gd" type="Script" id=1]
+[ext_resource path="res://sprites/large.png" type="Texture" id=2]
+[ext_resource path="res://AnimationPlayer.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Bobbing.tscn" type="PackedScene" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 13.5103, 18.091 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 2 )
+region = Rect2( 0.517822, 29.9457, 64.4822, 18.5505 )
+
+[node name="Rollable" type="Area2D"]
+script = ExtResource( 1 )
+collect_level = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -0.699295, 0.174824 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="CollisionShape2D"]
+position = Vector2( -0.524479, -1.90735e-006 )
+scale = Vector2( 2, 2 )
+texture = SubResource( 2 )
+hframes = 4
+
+[node name="AnimationPlayer" parent="." instance=ExtResource( 3 )]
+
+[node name="Bobbing" parent="." instance=ExtResource( 4 )]
+[connection signal="area_entered" from="." to="." method="_on_Rollable_area_entered"]

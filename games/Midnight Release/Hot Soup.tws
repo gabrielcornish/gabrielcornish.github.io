@@ -1,0 +1,821 @@
+(dp0
+S'buildDestination'
+p1
+VC:\u005cUsers\u005cgabri\u005cDesktop\u005cHot Soup\u005cindex.html
+p2
+sS'saveDestination'
+p3
+VC:\u005cUsers\u005cgabri\u005cDocuments\u005cGitHub\u005cGames\u005cMidnight Release\u005cHot Soup.tws
+p4
+sS'metadata'
+p5
+(dp6
+sS'target'
+p7
+S'sugarcube-2'
+p8
+sS'storyPanel'
+p9
+(dp10
+S'widgets'
+p11
+(lp12
+(dp13
+S'selected'
+p14
+I00
+sS'pos'
+p15
+(lp16
+I598
+aI35
+asS'passage'
+p17
+(itiddlywiki
+Tiddler
+p18
+(dp20
+S'text'
+p21
+V<h1><<link "HOT SOUP" "1">><</link>></h1>@@#middle;A Micro Twine for a Rainy Day@@\u000a<<cacheaudio "HotSoup" "HotSoup.wav">>
+p22
+sS'title'
+p23
+VStart
+p24
+sS'modified'
+p25
+ctime
+struct_time
+p26
+((I2019
+I12
+I2
+I15
+I31
+I17
+I0
+I336
+I0
+tp27
+(dp28
+tp29
+Rp30
+sS'tags'
+p31
+(lp32
+sS'created'
+p33
+g26
+((I2019
+I12
+I2
+I9
+I35
+I6
+I0
+I336
+I0
+tp34
+(dp35
+tp36
+Rp37
+sbsa(dp38
+g14
+I00
+sg15
+(lp39
+I10
+aI150
+asg17
+(itiddlywiki
+Tiddler
+p40
+(dp41
+g21
+VHot Soup
+p42
+sg23
+VStoryTitle
+p43
+sg25
+g26
+((I2019
+I12
+I2
+I10
+I42
+I52
+I0
+I336
+I0
+tp44
+(dp45
+tp46
+Rp47
+sg31
+(lp48
+sg33
+g26
+((I2019
+I12
+I2
+I9
+I35
+I6
+I0
+I336
+I0
+tp49
+(dp50
+tp51
+Rp52
+sbsa(dp53
+g14
+I00
+sg15
+(lp54
+I10
+aI290
+asg17
+(itiddlywiki
+Tiddler
+p55
+(dp56
+g21
+VGabriel Cornish
+p57
+sg23
+VStoryAuthor
+p58
+sg25
+g26
+((I2019
+I12
+I2
+I10
+I47
+I35
+I0
+I336
+I0
+tp59
+(dp60
+tp61
+Rp62
+sg31
+(lp63
+sg33
+g26
+((I2019
+I12
+I2
+I9
+I35
+I6
+I0
+I336
+I0
+tp64
+(dp65
+tp66
+Rp67
+sbsa(dp68
+g14
+I00
+sg15
+(lp69
+I9
+aI427
+asg17
+(itiddlywiki
+Tiddler
+p70
+(dp71
+g21
+V<div id="passages"></div>
+p72
+sg23
+VStoryInterface
+p73
+sg25
+g26
+((I2019
+I12
+I2
+I9
+I37
+I7
+I0
+I336
+I0
+tp74
+(dp75
+tp76
+Rp77
+sg31
+(lp78
+sg33
+g26
+((I2019
+I12
+I2
+I9
+I36
+I17
+I0
+I336
+I0
+tp79
+(dp80
+tp81
+Rp82
+sbsa(dp83
+g14
+I01
+sg15
+(lp84
+I8
+aI556
+asg17
+(itiddlywiki
+Tiddler
+p85
+(dp86
+g21
+V/* Your story will use the CSS in this passage to style the page.\u000aGive this passage more tags, and it will only affect passages with those tags.\u000aExample selectors: */\u000a@import url('https://fonts.googleapis.com/css?family=Lora|Quicksand:700&display=swap');\u000a\u000abody {\u000a	/* This affects the entire page */\u000a	background-color: black;\u000a	color: #FFF1E8;	\u000a	font-family: 'Lora', serif;\u000a}\u000a\u000abr{\u000a	font-size: 16px;\u000a}\u000a\u000ah1{\u000a	font-family: 'Quicksand', sans-serif;\u000a	display: block;\u000a	margin: 0 auto;\u000a	text-align: center;\u000a}\u000a#middle{\u000a	display: block;\u000a	text-align: center;\u000a}\u000a\u000a@-moz-document url-prefix() { \u000a	.replay img{\u000a		width: 72px;\u000a		image-rendering: crisp-edges;\u000a	}\u000a\u000a	img{\u000a		width: 25%;\u000a		display: block;\u000a		margin: 3em auto;\u000a		image-rendering: crisp-edges;\u000a	}\u000a\u000a}\u000a\u000a.replay img{\u000a	width: 72px;\u000a	image-rendering: pixelated;\u000a}\u000a\u000aimg{\u000a	width: 25%;\u000a	display: block;\u000a	margin: 3em auto;\u000a	image-rendering: pixelated;\u000a}\u000a\u000a.passage {\u000a	/* This only affects passages */\u000a	font-size: 26px;\u000a	margin: 0 auto;\u000a	max-width: 30em;\u000a}\u000a.passage a {\u000a	/* This affects passage links */\u000a	color: #FFA300;\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	\u000a}\u000a\u000a
+p87
+sg23
+Vstyle
+p88
+sg25
+g26
+((I2019
+I12
+I3
+I9
+I41
+I53
+I1
+I337
+I0
+tp89
+(dp90
+tp91
+Rp92
+sg31
+(lp93
+Vstylesheet
+p94
+asg33
+g26
+((I2019
+I12
+I2
+I9
+I37
+I23
+I0
+I336
+I0
+tp95
+(dp96
+tp97
+Rp98
+sbsa(dp99
+g14
+I00
+sg15
+(lp100
+F599.0
+aF180.0
+asg17
+(itiddlywiki
+Tiddler
+p101
+(dp102
+g21
+VYou're in your small kitchen cooking hot noodle soup for lunch. \u000a\u000aThe rain patters against the window in front of you. Through it, you can see the mountains off in the <<linkappend "distance.">><<scrolldown>>\u000a\u000aYou're careful not to burn the soup on the stove this time. Your mouth is still recovering from yesterday's <<linkappend "batch.">><<scrolldown>>\u000a\u000aIt's oddly quiet in the house. You haven't seen your cat all day, and she hasn't had lunch yet. Where could she have- <<linkappend "KLA-SHLIIINK">><<scrolldown>>\u000a\u000aSuddenly a loud crashing noise from the bedroom interrupts your thoughts. Welp that solves the cat <<linkappend "mystery.">><<scrolldown>> \u000a\u000aYou go to investigate the noise but discover it wasn't the cat <<linkappend "after all...">><<scrolldown>> You left the window open, and the rain knocked over a small plant on the <<linkappend "sill.">><<scrolldown>>\u000a\u000aWhat do you do?\u000a* [[I should close the window to keep the house dry.|3]]\u000a* [[I'll keep the window open. The plants on the sill look like they're enjoying the misty breeze.|2]]<br><br><</linkappend>><</linkappend>><</linkappend>><</linkappend>><</linkappend>><</linkappend>>\u000a<<audio "HotSoup" loop volume 0.0 fadeto 0.25>>\u000a\u000a\u000a
+p103
+sg23
+V1
+p104
+sg25
+g26
+((I2019
+I12
+I2
+I15
+I5
+I19
+I0
+I336
+I0
+tp105
+(dp106
+tp107
+Rp108
+sg31
+(lp109
+sg33
+g26
+((I2019
+I12
+I2
+I9
+I57
+I56
+I0
+I336
+I0
+tp110
+(dp111
+tp112
+Rp113
+sbsa(dp114
+g14
+I00
+sg15
+(lp115
+I204
+aI30
+asg17
+(itiddlywiki
+Tiddler
+p116
+(dp117
+g21
+V[img[burntsoup]]
+p118
+sg23
+VPassageHeader
+p119
+sg25
+g26
+((I2019
+I12
+I2
+I10
+I10
+I31
+I0
+I336
+I0
+tp120
+(dp121
+tp122
+Rp123
+sg31
+(lp124
+sg33
+g26
+((I2019
+I12
+I2
+I10
+I10
+I12
+I0
+I336
+I0
+tp125
+(dp126
+tp127
+Rp128
+sbsa(dp129
+g14
+I00
+sg15
+(lp130
+F747.0
+aF347.0
+asg17
+(itiddlywiki
+Tiddler
+p131
+(dp132
+g21
+VYou close the window and daydream out of it for a few moments. It looks so cold and wet out <<linkappend "there.">><<scrolldown>>\u000a\u000aYou're staring out the window when you catch a glimpse of two orange cats snuggling under an overhang, <<linkappend "hiding from the rain.">><<scrolldown>>\u000a\u000aAhh! That's where your cat escaped to! It looks like she's made a new <<linkappend "friend.">><<scrolldown>>\u000a\u000aSince the sun's hiding and the window's closed, you grab the watering can and give your plants a little <<linkappend "love.">><<scrolldown>> \u000a\u000aSuddenly, in a panic, you <<linkappend "realize...">><<scrolldown>>\u000a\u000a"THE SOUP!" [[You race back to the kitchen.|4]]<br><br><</linkappend>><</linkappend>><</linkappend>><</linkappend>><</linkappend>>
+p133
+sg23
+V3
+p134
+sg25
+g26
+((I2019
+I12
+I2
+I14
+I27
+I16
+I0
+I336
+I0
+tp135
+(dp136
+tp137
+Rp138
+sg31
+(lp139
+sg33
+g26
+((I2019
+I12
+I2
+I10
+I23
+I16
+I0
+I336
+I0
+tp140
+(dp141
+tp142
+Rp143
+sbsa(dp144
+g14
+I00
+sg15
+(lp145
+F459.0
+aF337.0
+asg17
+(itiddlywiki
+Tiddler
+p146
+(dp147
+g21
+VYou keep the window open, and the plants get some natural water.\u000a\u000aYou're staring out the window when you catch a glimpse of two orange cats snuggling under an overhang, <<linkappend "hiding from the rain.">><<scrolldown>>\u000a\u000aAhh! That's where your cat escaped to! It looks like she's made a new <<linkappend "friend.">><<scrolldown>>\u000a\u000aSuddenly, you feel your socks turn cold and <<linkappend "damp.">><<scrolldown>> Ugh! A small puddle has formed on the floor from the rain coming through the window. You grab a towel and dry off the <<linkappend "floor.">><<scrolldown>>\u000a\u000aThat's when, in a panic, you suddenly <<linkappend "realize...">><<scrolldown>>\u000a\u000a"THE SOUP!" [[You race back to the kitchen.|4]]<br><br><</linkappend>><</linkappend>><</linkappend>><</linkappend>><</linkappend>>
+p148
+sg23
+V2
+p149
+sg25
+g26
+((I2019
+I12
+I2
+I14
+I34
+I45
+I0
+I336
+I0
+tp150
+(dp151
+tp152
+Rp153
+sg31
+(lp154
+sg33
+g26
+((I2019
+I12
+I2
+I10
+I23
+I16
+I0
+I336
+I0
+tp155
+(dp156
+tp157
+Rp158
+sbsa(dp159
+g14
+I00
+sg15
+(lp160
+F595.0
+aF526.0
+asg17
+(itiddlywiki
+Tiddler
+p161
+(dp162
+g21
+VYou slide into the kitchen, turning off the burner and pulling the pot off the stove at the same <<linkappend "time.">><<scrolldown>>\u000a\u000aYou smell the soup to see if it's <<linkappend "burnt...again.">><<scrolldown>>\u000a\u000aA sigh of relief escapes you. The soup is cooked to perfection. You pour yourself a bowl and sit down by the living room <<linkappend "fireplace.">><<scrolldown>>\u000a\u000aIt dawns on you that you still need to feed the cat. Hopefully, the cat hasn't gotten too wet from the <<linkappend "rain.">><<scrolldown>> \u000a\u000aOn the other hand, she seemed so happy to be outside with her new <<linkappend "friend.">><<scrolldown>>\u000a\u000aWhat do you do?\u000a* [[I decide to bring the cat in for the day.|6]]\u000a* [[I let her be outside today.|5]]<br><br><</linkappend>><</linkappend>><</linkappend>><</linkappend>><</linkappend>>
+p163
+sg23
+V4
+p164
+sg25
+g26
+((I2019
+I12
+I2
+I14
+I38
+I13
+I0
+I336
+I0
+tp165
+(dp166
+tp167
+Rp168
+sg31
+(lp169
+sg33
+g26
+((I2019
+I12
+I2
+I10
+I23
+I24
+I0
+I336
+I0
+tp170
+(dp171
+tp172
+Rp173
+sbsa(dp174
+g14
+I00
+sg15
+(lp175
+F454.0
+aF682.0
+asg17
+(itiddlywiki
+Tiddler
+p176
+(dp177
+g21
+VYou think her new friend will be able to keep her warm <<linkappend "today.">><<scrolldown>> \u000a\u000aYou grab a blanket off the couch, wrap it around yourself and sip your soup in front of the <<linkappend "fireplace.">><<scrolldown>>\u000a\u000aOnce again, you hear the rain pattering against the windows throughout the <<linkappend "house.">><<scrolldown>>\u000a\u000aAnother fantastic day, [[complete]].<</linkappend>><</linkappend>><</linkappend>>
+p178
+sg23
+V5
+p179
+sg25
+g26
+((I2019
+I12
+I2
+I15
+I6
+I32
+I0
+I336
+I0
+tp180
+(dp181
+tp182
+Rp183
+sg31
+(lp184
+sg33
+g26
+((I2019
+I12
+I2
+I10
+I23
+I40
+I0
+I336
+I0
+tp185
+(dp186
+tp187
+Rp188
+sbsa(dp189
+g14
+I00
+sg15
+(lp190
+F732.0
+aF675.0
+asg17
+(itiddlywiki
+Tiddler
+p191
+(dp192
+g21
+VShe can see her friend tomorrow when it's sunnier. You whistle for her to come inside, and within seconds she's warming herself up by the <<linkappend "fireplace.">><<scrolldown>> \u000a\u000aYou put some food out for her and together enjoy your meals in front of the flickering <<linkappend "fire.">><<scrolldown>>\u000a\u000aAnother fantastic day, [[complete]].<</linkappend>><</linkappend>>
+p193
+sg23
+V6
+p194
+sg25
+g26
+((I2019
+I12
+I2
+I15
+I6
+I46
+I0
+I336
+I0
+tp195
+(dp196
+tp197
+Rp198
+sg31
+(lp199
+sg33
+g26
+((I2019
+I12
+I2
+I10
+I23
+I50
+I0
+I336
+I0
+tp200
+(dp201
+tp202
+Rp203
+sbsa(dp204
+g14
+I00
+sg15
+(lp205
+I9
+aI694
+asg17
+(itiddlywiki
+Tiddler
+p206
+(dp207
+g21
+V/*\u000a	<<scrolldown [duration]>>\u000a\u000a	duration : (optional) The length of time to animate the scroll, as the\u000a	           strings 'fast' or 'slow' or a valid CSS time value (e.g. 5s\u000a	           and 500ms).  The default duration is 'slow'.\u000a*/\u000aMacro.add('scrolldown', {\u000a	handler : function () {\u000a		var target   = document.scrollingElement || 'html,body';\u000a		var duration;\u000a\u000a		if (this.args.length > 0) {\u000a			switch (this.args[0]) {\u000a			case 'fast':\u000a			case 'slow':\u000a				duration = this.args[0];\u000a				break;\u000a			default:\u000a				try {\u000a					duration = Math.max(Engine.minDomActionDelay, Util.fromCssTime(this.args[0]));\u000a				}\u000a				catch (ex) {\u000a					return this.error(ex.message);\u000a				}\u000a				break;\u000a			}\u000a		}\u000a		else {\u000a			duration = 'slow';\u000a		}\u000a\u000a		setTimeout(function () {\u000a			$(target).animate({\u000a				scrollTop: $(document).height() - $(window).height()\u000a			}, duration);\u000a		}, Engine.minDomActionDelay);\u000a	}\u000a});
+p208
+sg23
+Vmain
+p209
+sg25
+g26
+((I2019
+I12
+I2
+I11
+I22
+I32
+I0
+I336
+I0
+tp210
+(dp211
+tp212
+Rp213
+sg31
+(lp214
+Vscript
+p215
+asg33
+g26
+((I2019
+I12
+I2
+I11
+I22
+I24
+I0
+I336
+I0
+tp216
+(dp217
+tp218
+Rp219
+sbsa(dp220
+g14
+I00
+sg15
+(lp221
+F600.0
+aF829.0
+asg17
+(itiddlywiki
+Tiddler
+p222
+(dp223
+g21
+V<h1>THANK YOU FOR PLAYING</h1>\u000a\u000aIf this cozy experience brought you joy, I'd love your rating and your feedback. \u000a\u000aI'll happily create more.\u000a@@.replay;[img[replay][Start]]@@
+p224
+sg23
+Vcomplete
+p225
+sg25
+g26
+((I2019
+I12
+I3
+I9
+I29
+I52
+I1
+I337
+I0
+tp226
+(dp227
+tp228
+Rp229
+sg31
+(lp230
+sg33
+g26
+((I2019
+I12
+I2
+I15
+I6
+I35
+I0
+I336
+I0
+tp231
+(dp232
+tp233
+Rp234
+sbsa(dp235
+g14
+I00
+sg15
+(lp236
+I10
+aI10
+asg17
+(itiddlywiki
+Tiddler
+p237
+(dp238
+g21
+Vdata:image/gif;base64,R0lGODdhQAAlAHcAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQJFAAAACwAAAAAQAAlAIIAAAAAAAD/8ej/zKoAh1GDdpz/d6gA5DYD4Ri63P4wykmrvTjrzbv/4CMIYSmNqBmNHOqqjUtm8gsH9WzNuV72vsBgIGKQUjiTLckUDomx4iLYUlAbT+h0p/FdI8MoF4P8grUbs6OmCXvUU7YkSwfBgWAIurpiLxdQWoI3WywscwqDQomEOnCAFHshjw90lk8wlHqIKpqbDoGdH5JEpUogkouqdp55TqCEHaarjLEbs3uptpGqubsaBMHCw8EPBQrHAcm/BBTNDQXRycsgBgHWDc/ODsfdMAfZ2hXFyNLUIQYH2AHiGNrmN+AK7RnP0zDEIMTk+vQ3/A4SAAAh+QQJFAAAACwAAAAAQAAlAIIAAAAAAAD/8ej/zKoAh1GDdpz/d6gA5DYD4Ri63P4wykmrvTjrzbv/4CMIYSmNqBmNHOqqjUtm8gsH9cwMAzTnuhIwyOM5gqQUzmRbOgPFXkzECHZ+FOO0YuVWP90VjfW0aFuXmuaMpuQm0TgoXAVGpA789aRuLqR4gTcLSYVwCoJQiIM6dHlZN44ScZRFMJKHd5ceen+LTB+dij2ie6EPgEKYFYCipYNmirKesBukn7S1GbezuLoXBMHCw8EPBQrHAcm/BBTNDQXRycsgBgHWDc/ODsfdMAfZ2hXFyNLUIQYH2AHiGNrmN+AK7RnP0zDEIMTk+vQ3/A4SAAAh+QQJFAAAACwAAAAAQAAlAIIAAAAAAAD/8ej/zKoAh1GDdpz/d6gA5DYD4Bi63P4wykmrvTjrzbv/4CMIYSmNqBmNHOqqjUtm8gsH9dwM0JzrpR8wMOA5gKQUzmRbOolFI2OoQIZ8FOnUQqVYPd0ejfW0FMGXmuaM9qol0Ti7vfpFtAz8JlxVNxdGUoI3C0mGE4GACok3Onw7WY0bcpRRMI+IcJceekSLKpiRkDydLSCdjCBknIt6pYQVpJ95sByynrS1a7h4r7oRBMHCw8EPBQrHyL8BBBTNDQXRyckhBgHWDc/ODsfdMAfZ2hXFyNLUJQYH2Mwc2uY34AriGs/TMMQgxOT584T7DgkAACH5BAkUAAAALAAAAABAACUAggAAAAAAAP/x6P/MqgCHUYN2nP93qADkNgPiGLrc/jDKSau9OOvNu//gIwhhKY2oGY0c6qqNS0IDJL9wcM/NUDuzHa8kHAZ8vhiDlNKZcM7o4qcELkPBlsVYGXIzXxuYJbUkO2GRTHNGd28TpLztPgkj1B4orYNDpwpUgjkLTIZxgYBHiTk8fAx5NI0bc5VIMI8SkXoqmZoPP5senp96NaJaH6KhRKSldIyElIu0irJstJGot4iskLwaBMLDxMIPBQrIycABBBTODQXSysohBgHXDdDPDsjeMAfa2xXGydPVJQYH2c0c2+c54QrjwcsB6CHFIMXl+/SE/RwkAAAh+QQJFAAAACwAAAAAQAAlAIIAAAAAAAD/8ej/zKoAh1GDdpz/d6gA5DYD3hi63P4wykmrvTjrzbv/4CMIYSmNqBmNHOqqjUs+wyqncHDPzFCLih2vJBwGfo4hCWf0vIJQSlPHmGpmVqklu6p+uLEMM+NzXm6aslmKlvjecBC4GEE27K0T+tlTIP85C0uDEz+AR36BPGALeDQ5jDRwk3EqkRCOfZYemYabnA41oiaXbo+IISwfho6ZgRajqI2vHLF4rrSFqLe5GgS/wMG/DwUKxQHHvQQUyw0Fz8fJIAYB1A3NzA7F2zAH19gVw8bQ0iEGB9YB4BjY5DneCusZzdEwwiDC4vjyOfoOCQAh+QQJFAAAACwAAAAAQAAlAIIAAAAAAAD/8ej/zKoAh1GDdpz/d6gA5DYD5Ri63P4wykmrvTjrzbv/4CMIYSmNqBmN0XCiqcrApDO4EA3Lil4zOFHPJ/OxKr8AKZb87HpQSjNK9dSmFqwwk9RevA6w6Ci2BTflhU5zcyLXkpt8DhIbvWdg/UVTxvQBQYI8an6GcQqDgYmEP2mLE3khjw1zlpZFHZKAJpQPmzibHZ6fNouiaCCgjJOkpYGSqIQULqGVsxy1rAuyuC2Qeb2+DwTFxsfFDwUKywHNwwQU0Q0F1c3PIAYB2g3T0g7L4TIH3d4VyczW2CEGB9wB5hje6jzkCvEZ09cyyCDI6P7w8QDoIAEAIfkECRQAAAAsAAAAAEAAJQCCAAAAAAAA//Ho/8yqAIdRg3ac/3eoAOQ2A9oYutz+MMpJq7046827/+AjCGE4SGNaouSWvqvzts4JzXCs4HTV8r0QMBjpkVQBYieX3PlEDKXmx5HKptGP9YpBbh8DW/WC04S1vrIkzG6DvsOIuDEfF8vMhU3M12VHSV97egqDfjRfhBN1Qhttj486iXJrkh6MAYYlk5V0mZ+bIJiaWpydZ55+HSekoKqOoHWYrxWsham0GQS7vL27DwUKwQHDuQEEFMgNBczDxSAGAdENyskOwdg6B9TVFb/Czc8hBgfTxxzV4X7bCt0ays46viC+3/TuqvYOCQAh+QQJFAAAACwAAAAAQAAlAIIAAAAAAAD/zKr/8egAh1GDdpz/d6gA5DYD2hi63P4wykmrvTjrzbnoYCgNg2hSZHqO5Za+q/O22AzHik1Xrb6bvl9kV1IFhJ3bMcd7EIFMlwU5eYKozowRCxF8khebxhviLnQTr3otMgcjX0ccPBQrF9+4Hsco+tMKewF5fEtRFHNdfGZda45sMYxwEoltIJWDgZEhlR+eK5KAcppAoZSBnYUdn5kMmKoVrImvsICErrUaBLu8vbsPBQrBAcO5BBTHDQXLw8UiBgHQDcnIDsHXOAfT1BW/wszOJgYH0gHcGNTgfNoK5xnJzTi+Ir7e9O589g4JACH5BAkUAAAALAAAAABAACUAggAAAAAAAP/Mqv/x6ACHUYN2nP93qADkNgPcGLrc/pCJSKu9OOvNu/9gKCrDMJ5UqaJR6akw28DmRsdycNdYvfOnHzDFMK10KBxyWRmSiiPfq8cBOm2Za8rFxAgmH+3jxvmGxEUy5ctui9C6XwTsoIe3tDhXoqD7cwtGghVgfwGFgDxwC3YQjVEdbZKSMotza5Ugj4d9LJaYDROiSSKbiFGfoGahgB+jnHytkbCNm7IWr7W3HAS9vr+9DwUKwwHFuwQWyQ0FzcXHIgYB0g3Lyg7D2TIH1dYXwcTO0CMGB9QB3hrW4jncCukby88ywCLA4PbwOfgOCQA7
+p239
+sg23
+Vburntsoup
+p240
+sg25
+g26
+((I2019
+I12
+I2
+I15
+I29
+I51
+I0
+I336
+I0
+tp241
+(dp242
+tp243
+Rp244
+sg31
+(lp245
+S'Twine.image'
+p246
+asg33
+g244
+sbsa(dp247
+g14
+I00
+sg15
+(lp248
+F332.0
+aF839.0
+asg17
+(itiddlywiki
+Tiddler
+p249
+(dp250
+g21
+Vdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAARNJREFUeJzt21GKwzAQBFEp5Jo5nQ+qnGAoGjRIhnrfwWsKQeONM8cYaxywnuzz89dzH+Rz5s++h4GAgYCBgIHAHM0rlq5Vqlq3XSvpCQIGAgYCBgIGAt9dF+p+tqqu372SniBgIGAgYCBgIBCv2Kn/BO565kp5goCBgIGAgYCBQLlip56t0ut3r5snCBgIGAgYCBgIzPVk34t1r1Wq+348QcBAwEDAQMBAoFyx29Yqtev+PUHAQMBAwEDAQCB+R/G2tUql6+YJAgYCBgIGAgYC295RrHT/zsu3Ow4zEDAQMBAwEGhfsVS1Sv7q+VIGAgYCBgIGAtet2Km1qniCgIGAgYCBgIGAgYCBgIGAgYCBgIHAHyyCLHn0X7B1AAAAAElFTkSuQmCC
+p251
+sg23
+Vreplay
+p252
+sg25
+g26
+((I2019
+I12
+I3
+I9
+I26
+I56
+I1
+I337
+I0
+tp253
+(dp254
+tp255
+Rp256
+sg31
+(lp257
+S'Twine.image'
+p258
+asg33
+g256
+sbsasS'scale'
+p259
+I1
+sS'snapping'
+p260
+I00
+ss.

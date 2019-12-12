@@ -1,0 +1,136 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Title/Title Screen.gd" type="Script" id=1]
+[ext_resource path="res://fonts/Newsgeek.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Score.gd" type="Script" id=3]
+[ext_resource path="res://Title/Camera2D.gd" type="Script" id=4]
+[ext_resource path="res://ProgressNode.tscn" type="PackedScene" id=5]
+[ext_resource path="res://sprites/player.png" type="Texture" id=6]
+[ext_resource path="res://Title/Player.tscn" type="PackedScene" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 2 )
+
+[node name="Title Screen" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_vertical_guides_": [ 63.9823 ]
+}
+
+[node name="Control" type="Control" parent="."]
+editor/display_folded = true
+margin_left = 63.16
+margin_top = 10.55
+margin_right = 191.16
+margin_bottom = 138.55
+
+[node name="Score" type="RichTextLabel" parent="Control"]
+margin_left = 1970.0
+margin_top = 75.0
+margin_right = 2094.0
+margin_bottom = 145.0
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0.933333, 0.933333, 0.933333, 1 )
+meta_underlined = false
+text = "00:00"
+scroll_active = false
+script = ExtResource( 3 )
+
+[node name="Camera2D" type="Camera2D" parent="." groups=[
+"camera",
+]]
+position = Vector2( 128, 96 )
+current = true
+drag_margin_h_enabled = false
+drag_margin_v_enabled = false
+smoothing_enabled = true
+script = ExtResource( 4 )
+
+[node name="ProgressNode" parent="Camera2D" instance=ExtResource( 5 )]
+position = Vector2( -70.5519, 90.2431 )
+
+[node name="Backdrops" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Backdrop" type="Sprite" parent="Backdrops"]
+position = Vector2( 128, 95.0975 )
+texture = ExtResource( 6 )
+
+[node name="Backdrop2" type="Sprite" parent="Backdrops"]
+position = Vector2( 320, 96 )
+texture = ExtResource( 6 )
+
+[node name="Backdrop3" type="Sprite" parent="Backdrops"]
+position = Vector2( 512, 96 )
+texture = ExtResource( 6 )
+
+[node name="Backdrop4" type="Sprite" parent="Backdrops"]
+position = Vector2( 704, 96 )
+texture = ExtResource( 6 )
+
+[node name="Backdrop5" type="Sprite" parent="Backdrops"]
+position = Vector2( 896, 96 )
+texture = ExtResource( 6 )
+
+[node name="Backdrop6" type="Sprite" parent="Backdrops"]
+position = Vector2( 1088, 96 )
+texture = ExtResource( 6 )
+
+[node name="Backdrop7" type="Sprite" parent="Backdrops"]
+position = Vector2( 1280, 96 )
+texture = ExtResource( 6 )
+
+[node name="Backdrop8" type="Sprite" parent="Backdrops"]
+position = Vector2( 1472, 96 )
+texture = ExtResource( 6 )
+
+[node name="Backdrop9" type="Sprite" parent="Backdrops"]
+position = Vector2( 1664, 96 )
+texture = ExtResource( 6 )
+
+[node name="Backdrop10" type="Sprite" parent="Backdrops"]
+position = Vector2( 1856, 96 )
+texture = ExtResource( 6 )
+
+[node name="Circles" type="Node2D" parent="."]
+
+[node name="Player" parent="Circles" instance=ExtResource( 7 )]
+position = Vector2( 128, 95.0975 )
+first = true
+
+[node name="Player2" parent="Circles" instance=ExtResource( 7 )]
+position = Vector2( 320, 96 )
+id = 1
+
+[node name="Player3" parent="Circles" instance=ExtResource( 7 )]
+position = Vector2( 512, 96 )
+id = 2
+
+[node name="Player4" parent="Circles" instance=ExtResource( 7 )]
+position = Vector2( 704, 96 )
+id = 3
+
+[node name="Player5" parent="Circles" instance=ExtResource( 7 )]
+position = Vector2( 896, 96 )
+id = 4
+
+[node name="Player6" parent="Circles" instance=ExtResource( 7 )]
+position = Vector2( 1088, 96 )
+id = 5
+
+[node name="Player7" parent="Circles" instance=ExtResource( 7 )]
+position = Vector2( 1280, 96 )
+id = 6
+
+[node name="Player8" parent="Circles" instance=ExtResource( 7 )]
+position = Vector2( 1472, 96 )
+id = 7
+
+[node name="Player9" parent="Circles" instance=ExtResource( 7 )]
+position = Vector2( 1664, 96 )
+id = 8
+
+[node name="Player10" parent="Circles" instance=ExtResource( 7 )]
+position = Vector2( 1856, 96 )
+id = 9
+last = true
