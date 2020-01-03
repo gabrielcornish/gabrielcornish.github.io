@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/grass.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://assets/Textures/Grass.png" type="Texture" id=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+params_diffuse_mode = 1
+albedo_texture = ExtResource( 2 )
+
+[sub_resource type="ConcavePolygonShape" id=2]
+data = PoolVector3Array( 0.5, 0.2, 0.5, -0.5, 0.2, -0.5, 0.5, 0.2, -0.5, -0.5, 0.2, 0.5, -0.5, 0.2, -0.5, 0.5, 0.2, 0.5, 0.5, 0.2, 1.5, -0.5, 0.2, 0.5, 0.5, 0.2, 0.5, -0.5, 0.2, 1.5, -0.5, 0.2, 0.5, 0.5, 0.2, 1.5, -0.5, 0.2, 1.5, -1.5, 0.2, 0.5, -0.5, 0.2, 0.5, -1.5, 0.2, 1.5, -1.5, 0.2, 0.5, -0.5, 0.2, 1.5, -0.5, 0.2, 0.5, -1.5, 0.2, -0.5, -0.5, 0.2, -0.5, -1.5, 0.2, 0.5, -1.5, 0.2, -0.5, -0.5, 0.2, 0.5 )
+
+[node name="Spatial" type="Spatial"]
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="StaticBody" type="StaticBody" parent="MeshInstance"]
+
+[node name="CollisionShape" type="CollisionShape" parent="MeshInstance/StaticBody"]
+shape = SubResource( 2 )

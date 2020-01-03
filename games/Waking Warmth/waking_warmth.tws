@@ -1,0 +1,756 @@
+(dp0
+S'buildDestination'
+p1
+S''
+p2
+sS'saveDestination'
+p3
+VC:\u005cUsers\u005cgabri\u005cDocuments\u005cGitHub\u005cgabrielcornish.github.io\u005cgames\u005cWaking Warmth\u005cwaking_warmth.tws
+p4
+sS'metadata'
+p5
+(dp6
+sS'target'
+p7
+S'sugarcube-2'
+p8
+sS'storyPanel'
+p9
+(dp10
+S'widgets'
+p11
+(lp12
+(dp13
+S'selected'
+p14
+I00
+sS'pos'
+p15
+(lp16
+I724
+aI75
+asS'passage'
+p17
+(itiddlywiki
+Tiddler
+p18
+(dp20
+S'text'
+p21
+V<h1>WAKING WARMTH</h1>\u000a[img[rise_brave_one]]\u000a<<button [[PLAY|1]]>><</button>>
+p22
+sS'title'
+p23
+VStart
+p24
+sS'modified'
+p25
+ctime
+struct_time
+p26
+((I2019
+I12
+I16
+I11
+I25
+I40
+I0
+I350
+I0
+tp27
+(dp28
+tp29
+Rp30
+sS'tags'
+p31
+(lp32
+sS'created'
+p33
+g26
+((I2019
+I12
+I16
+I9
+I0
+I54
+I0
+I350
+I0
+tp34
+(dp35
+tp36
+Rp37
+sbsa(dp38
+g14
+I00
+sg15
+(lp39
+I81
+aI43
+asg17
+(itiddlywiki
+Tiddler
+p40
+(dp41
+g21
+S'Untitled Story'
+p42
+sg23
+S'StoryTitle'
+p43
+sg25
+g26
+((I2019
+I12
+I16
+I9
+I0
+I54
+I0
+I350
+I0
+tp44
+(dp45
+tp46
+Rp47
+sg31
+(lp48
+sg33
+g47
+sbsa(dp49
+g14
+I00
+sg15
+(lp50
+I81
+aI183
+asg17
+(itiddlywiki
+Tiddler
+p51
+(dp52
+g21
+S'Anonymous'
+p53
+sg23
+S'StoryAuthor'
+p54
+sg25
+g26
+((I2019
+I12
+I16
+I9
+I0
+I54
+I0
+I350
+I0
+tp55
+(dp56
+tp57
+Rp58
+sg31
+(lp59
+sg33
+g58
+sbsa(dp60
+g14
+I00
+sg15
+(lp61
+F724.0
+aF223.0
+asg17
+(itiddlywiki
+Tiddler
+p62
+(dp63
+g21
+VYou're walking under the moonlight next to a snowy creek in the forrest. The air is cold but you're barefoot because the snow is as warm as dried towels.\u000a\u000aYour friends raced ahead\u000a\u000aYou need catch up with your friend so that you can share their blanket. [[2]]\u000a\u000aYou need to lag behind so that you can dip your feet in the creek. [[3]]
+p64
+sg23
+V1
+p65
+sg25
+g26
+((I2019
+I12
+I16
+I11
+I35
+I11
+I0
+I350
+I0
+tp66
+(dp67
+tp68
+Rp69
+sg31
+(lp70
+sg33
+g26
+((I2019
+I12
+I16
+I9
+I4
+I4
+I0
+I350
+I0
+tp71
+(dp72
+tp73
+Rp74
+sbsa(dp75
+g14
+I00
+sg15
+(lp76
+F876.0
+aF391.0
+asg17
+(itiddlywiki
+Tiddler
+p77
+(dp78
+g21
+VYou lag behind so that you can dip your feet in the creek. However... You're going to be late for the awakening.\u000a\u000aYou need to be quiet so that you don't disturb the awakening in progress.[[4]]
+p79
+sg23
+V3
+p80
+sg25
+g26
+((I2019
+I12
+I16
+I9
+I18
+I7
+I0
+I350
+I0
+tp81
+(dp82
+tp83
+Rp84
+sg31
+(lp85
+sg33
+g26
+((I2019
+I12
+I16
+I9
+I4
+I27
+I0
+I350
+I0
+tp86
+(dp87
+tp88
+Rp89
+sbsa(dp90
+g14
+I00
+sg15
+(lp91
+F562.0
+aF389.0
+asg17
+(itiddlywiki
+Tiddler
+p92
+(dp93
+g21
+VYou catch up with your friend so that you can share their blanket. However...the blanket is to small for the both of you.\u000a\u000aYou need to be quiet so that the awakening can begin. [[4]]
+p94
+sg23
+V2
+p95
+sg25
+g26
+((I2019
+I12
+I16
+I9
+I17
+I35
+I0
+I350
+I0
+tp96
+(dp97
+tp98
+Rp99
+sg31
+(lp100
+sg33
+g26
+((I2019
+I12
+I16
+I9
+I4
+I27
+I0
+I350
+I0
+tp101
+(dp102
+tp103
+Rp104
+sbsa(dp105
+g14
+I00
+sg15
+(lp106
+F724.0
+aF569.0
+asg17
+(itiddlywiki
+Tiddler
+p107
+(dp108
+g21
+VYou're quiet so that you don't disturb the awakening in progress. However... the quiet makes you sleepy.\u000a\u000a[[5]]
+p109
+sg23
+V4
+p110
+sg25
+g26
+((I2019
+I12
+I16
+I9
+I22
+I6
+I0
+I350
+I0
+tp111
+(dp112
+tp113
+Rp114
+sg31
+(lp115
+sg33
+g26
+((I2019
+I12
+I16
+I9
+I4
+I36
+I0
+I350
+I0
+tp116
+(dp117
+tp118
+Rp119
+sbsa(dp120
+g14
+I00
+sg15
+(lp121
+F725.0
+aF749.0
+asg17
+(itiddlywiki
+Tiddler
+p122
+(dp123
+g21
+VYou need to say the awoken god's name so that they can awaken.[[6]]\u000a\u000aYou need to stay silent so that you don't wake your friend. [[7]]
+p124
+sg23
+V5
+p125
+sg25
+g26
+((I2019
+I12
+I16
+I9
+I25
+I9
+I0
+I350
+I0
+tp126
+(dp127
+tp128
+Rp129
+sg31
+(lp130
+sg33
+g26
+((I2019
+I12
+I16
+I9
+I22
+I9
+I0
+I350
+I0
+tp131
+(dp132
+tp133
+Rp134
+sbsa(dp135
+g14
+I00
+sg15
+(lp136
+F961.0
+aF924.0
+asg17
+(itiddlywiki
+Tiddler
+p137
+(dp138
+g21
+VYou stay silent so that you don't wake your friend. 
+p139
+sg23
+V7
+p140
+sg25
+g26
+((I2019
+I12
+I16
+I9
+I26
+I18
+I0
+I350
+I0
+tp141
+(dp142
+tp143
+Rp144
+sg31
+(lp145
+sg33
+g26
+((I2019
+I12
+I16
+I9
+I22
+I30
+I0
+I350
+I0
+tp146
+(dp147
+tp148
+Rp149
+sbsa(dp150
+g14
+I00
+sg15
+(lp151
+F531.0
+aF916.0
+asg17
+(itiddlywiki
+Tiddler
+p152
+(dp153
+g21
+V<<print $god_name>>\u000aYou say the awoken god's name so that they can awaken.\u000a\u000a<<textbox "$god_name" "">>\u000a\u000a[[submit|8]]\u000a
+p154
+sg23
+V6
+p155
+sg25
+g26
+((I2019
+I12
+I16
+I9
+I44
+I46
+I0
+I350
+I0
+tp156
+(dp157
+tp158
+Rp159
+sg31
+(lp160
+sg33
+g26
+((I2019
+I12
+I16
+I9
+I22
+I30
+I0
+I350
+I0
+tp161
+(dp162
+tp163
+Rp164
+sbsa(dp165
+g14
+I00
+sg15
+(lp166
+I410
+aI1071
+asg17
+(itiddlywiki
+Tiddler
+p167
+(dp168
+g21
+V<<if $god_name.toLowerCase() is "gabriel">>\u000a	<<goto "9">>\u000a<<else>>\u000a	Nothing to see here.\u000a<</if>>\u000a
+p169
+sg23
+V8
+p170
+sg25
+g26
+((I2019
+I12
+I16
+I9
+I52
+I3
+I0
+I350
+I0
+tp171
+(dp172
+tp173
+Rp174
+sg31
+(lp175
+Vnobr
+p176
+asg33
+g26
+((I2019
+I12
+I16
+I9
+I41
+I6
+I0
+I350
+I0
+tp177
+(dp178
+tp179
+Rp180
+sbsa(dp181
+g14
+I00
+sg15
+(lp182
+I636
+aI1072
+asg17
+(itiddlywiki
+Tiddler
+p183
+(dp184
+g21
+VYOU WIN!!!
+p185
+sg23
+V9
+p186
+sg25
+g26
+((I2019
+I12
+I16
+I9
+I45
+I31
+I0
+I350
+I0
+tp187
+(dp188
+tp189
+Rp190
+sg31
+(lp191
+sg33
+g26
+((I2019
+I12
+I16
+I9
+I45
+I22
+I0
+I350
+I0
+tp192
+(dp193
+tp194
+Rp195
+sbsa(dp196
+g14
+I00
+sg15
+(lp197
+I79
+aI337
+asg17
+(itiddlywiki
+Tiddler
+p198
+(dp199
+g21
+V<div id="passages"></div>
+p200
+sg23
+VStoryInterface
+p201
+sg25
+g26
+((I2019
+I12
+I16
+I9
+I55
+I44
+I0
+I350
+I0
+tp202
+(dp203
+tp204
+Rp205
+sg31
+(lp206
+sg33
+g26
+((I2019
+I12
+I16
+I9
+I55
+I21
+I0
+I350
+I0
+tp207
+(dp208
+tp209
+Rp210
+sbsa(dp211
+g14
+I00
+sg15
+(lp212
+I262
+aI359
+asg17
+(itiddlywiki
+Tiddler
+p213
+(dp214
+g21
+V/* Your story will use the CSS in this passage to style the page.\u000aGive this passage more tags, and it will only affect passages with those tags.\u000aExample selectors: */\u000a@import url('https://fonts.googleapis.com/css?family=Lora|Quicksand:700&display=swap');\u000a\u000abody {\u000a	/* This affects the entire page */\u000a	font-family: 'Lora', serif;\u000a	background-color: #909299;\u000a	color: #544d51;\u000a	\u000a}\u000a\u000a#canvas {\u000a  display: block;\u000a  width: 100%;\u000a  height: 100%;\u000a}\u000a\u000ah1{\u000a	text-align: center;\u000a	font-family: 'Quicksand', sans-serif;\u000a}\u000a\u000aimg{\u000a	border-radius: 10%;\u000a	width: 50%;\u000a	display: block;\u000a	margin: auto;\u000a}\u000a\u000a@-moz-document url-prefix() { \u000a	img{\u000a		image-rendering: crisp-edges;\u000a	}\u000a}\u000a\u000a.passage {\u000a	/* This only affects passages */\u000a	margin: 0 auto;\u000a	max-width: 30em;\u000a	padding: 0 1em;\u000a	font-size: 1.5em;\u000a	\u000a	\u000a}\u000a.passage a {\u000a	/* This affects passage links */\u000a	color: #cad9de;\u000a	\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	color: #cad9de;\u000a	\u000a	\u000a}\u000a\u000abutton {\u000a  display: block;\u000a  margin: auto;\u000a  cursor: pointer;\u000a  outline: none;\u000a  border: 0;\u000a  vertical-align: middle;\u000a  text-decoration: none;\u000a  text-transform: uppercase;\u000a  padding: 1.25em 2em;\u000a  background: #909299;\u000a  border: 2px solid #cad9de;\u000a  border-radius: 0.75em;\u000a  -webkit-transform-style: preserve-3d;\u000a          transform-style: preserve-3d;\u000a  transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);\u000a  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);\u000a  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);\u000a}\u000abutton::before {\u000a  position: absolute;\u000a  content: '';\u000a  width: 100%;\u000a  height: 100%;\u000a  top: 0;\u000a  left: 0;\u000a  right: 0;\u000a  bottom: 0;\u000a  background: #5d5c5e;\u000a  border-radius: inherit;\u000a  box-shadow: 0 0 0 2px #5d5c5e, 0 0.625em 0 0 #909299;\u000a  -webkit-transform: translate3d(0, 0.75em, -1em);\u000a          transform: translate3d(0, 0.75em, -1em);\u000a  transition: box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);\u000a  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);\u000a  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);\u000a}\u000abutton:hover {\u000a  background: #909299;\u000a  border-color: #cad9de;\u000a  -webkit-transform: translate(0, 0.25em);\u000a          transform: translate(0, 0.25em);\u000a}\u000abutton:hover::before {\u000a  box-shadow: 0 0 0 2px #cad9de, 0 0.5em 0 0 #909299;\u000a  -webkit-transform: translate3d(0, 0.5em, -1em);\u000a          transform: translate3d(0, 0.5em, -1em);\u000a}\u000abutton:active {\u000a  background: #909299;\u000a  -webkit-transform: translate(0em, 0.75em);\u000a          transform: translate(0em, 0.75em);\u000a}\u000abutton:active::before {\u000a  box-shadow: 0 0 0 2px #cad9de, 0 0 #909299;\u000a  -webkit-transform: translate3d(0, 0, -1em);\u000a          transform: translate3d(0, 0, -1em);\u000a}\u000a.floating {  \u000a    animation-name: floating;\u000a    animation-duration: 3s;\u000a    animation-iteration-count: infinite;\u000a    animation-timing-function: ease-in-out;\u000a    margin-left: 30px;\u000a    margin-top: 5px;\u000a}\u000a\u000a@keyframes floating {\u000a    from { transform: translate(0,  0px); }\u000a    65%  { transform: translate(0, 15px); }\u000a    to   { transform: translate(0, -0px); }    \u000a}
+p215
+sg23
+Vstyle
+p216
+sg25
+g26
+((I2019
+I12
+I16
+I11
+I28
+I44
+I0
+I350
+I0
+tp217
+(dp218
+tp219
+Rp220
+sg31
+(lp221
+Vstylesheet
+p222
+asg33
+g26
+((I2019
+I12
+I16
+I9
+I56
+I6
+I0
+I350
+I0
+tp223
+(dp224
+tp225
+Rp226
+sbsa(dp227
+g14
+I00
+sg15
+(lp228
+F547.0
+aF75.0
+asg17
+(itiddlywiki
+Tiddler
+p229
+(dp230
+g21
+Vdata:image/png;base64,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
+p231
+sg23
+Vrise_brave_one
+p232
+sg25
+g26
+((I2019
+I12
+I16
+I10
+I28
+I58
+I0
+I350
+I0
+tp233
+(dp234
+tp235
+Rp236
+sg31
+(lp237
+S'Twine.image'
+p238
+asg33
+g236
+sbsasS'scale'
+p239
+I1
+sS'snapping'
+p240
+I00
+ss.

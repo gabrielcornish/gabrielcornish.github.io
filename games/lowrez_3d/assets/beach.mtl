@@ -1,0 +1,56 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl Water
+Kd 0.2 0.588 0.82
+
+newmtl Oak_Leaves
+Kd 0.322 0.541 0.157
+
+newmtl Coconut
+Kd 0.518 0.42 0.333
+
+newmtl Wood_Palm
+Kd 0.545 0.435 0.278
+
+newmtl Iron_Grey_-_Light
+Kd 0.62 0.604 0.58
+
+newmtl Iron_Grey
+Kd 0.526 0.514 0.475
+
+newmtl Wood_Dark
+Kd 0.518 0.42 0.333
+
+newmtl Iron_Grey_-_Dark
+Kd 0.416 0.4 0.384
+
+newmtl Starfish
+Kd 0.882 0.592 0.51
+
+newmtl Shell_-_Faded
+Kd 0.855 0.777 0.714
+
+newmtl Shell_-_Faded_-_Lighter
+Kd 0.906 0.863 0.828
+
+newmtl Rock
+Kd 0.631 0.624 0.612
+
+newmtl Grass
+Kd 0.133 0.545 0.133
+
+newmtl Sand_-_Bright
+Kd 0.969 0.918 0.792
+
+newmtl Wood_Light
+Kd 0.737 0.631 0.463
+
+newmtl Grey_-_40
+Kd 0.4 0.4 0.4
+
+newmtl Dirt
+Kd 0.769 0.686 0.561
+
+newmtl Burlap
+Kd 0.769 0.694 0.569
+

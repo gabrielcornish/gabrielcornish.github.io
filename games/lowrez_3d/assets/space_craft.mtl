@@ -1,0 +1,15 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl stoneDark
+Kd 0.1137255 0.1686274 0.3254902
+
+newmtl stone
+Kd 0.7607843 0.7647059 0.7803922
+
+newmtl dark
+Kd 0.5137255 0.4627451 0.6117647
+
+newmtl _defaultMat
+Kd 0.939 0.953 1
+map_Kd Textures/_defaultMat.png
+
