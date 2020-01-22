@@ -1,0 +1,18 @@
+::StoryTitle
+TESTING
+
+:: StoryData
+{
+        "ifid": "DE1033DB-1A81-4DB4-9AE6-4AD8ABA3AB52"
+}
+
+::Start
+<<print "PLAYER: " + $player_points>>
+<<print "COMPUTER: " + $computer_points>>
+
+<<link "CLICK ME" "Start">>
+  <<script>>
+    EndRound(State.variables.player_deck, State.variables.opponent_deck, State.variables.deck)
+
+  <</script>>
+<</link>>
