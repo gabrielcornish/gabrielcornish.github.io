@@ -1,63 +1,80 @@
-State.variables.stack = []
-State.variables.diag_done = false;
+State.variables.dialogue = []
 
-window.loadStory = function(p) {
-	State.variables.stack = []
-	State.variables.diag_done = false;
+$(document).on("mousedown", function (event) {
+  if (event.which == 1){
+    NextLine(State.variables.dialogue);
+    $.wiki('<<scrolldown>>');
+  }
+});
 
-	let raw = Story.get(p).text.trim().split(/(?:\r?\n){2,}/);
+window.RunDialogue = function(p){
+  State.variables.dialogue = window.ParseDialogue(p);
+  $.wiki('<<timed 5ms>><<run NextLine(State.variables.dialogue)>><</timed>>');
+}
 
-  for (let i = 0; i < raw.length; i++) {
-    let text = raw[i].split(/\r?\n/);
+window.GetRawText = function(p){
+  return Story.get(p).text.trim().split(/(?:\r?\n){2,}/);
+}
 
+window.SplitRawText = function(p){
+  return p.split(/\r?\n/);
+}
+
+window.ParseDialogue = function(p){
+  let raw = GetRawText(p);
+
+  let loaded_story =  raw.map(function(value,index,arr){
+		//console.log(value)
+    let text = SplitRawText(value);
     let speaker = "";
 
-    if (text[0].startsWith(">")) {
+    if(text[0].startsWith(">")){
       speaker = text[0].substring(1).trim();
       text.splice(0,1);
     }
 
-    for (let j = 0; j < text.length; j++) {
-      let obj = {speaker: speaker, text: text[j]};
-      State.variables.stack = [...State.variables.stack, obj];
-    }
-  }
+    return {speaker:speaker, text:text[0]};
+  });
+
+  return loaded_story;
 }
 
-//prints text onto screen from stack
-window.advanceStory = function() {
-  if (State.variables.stack.length === 0){
-		/*dialogue tree end events not currently implemented, but they'd probably go in here*/
-		State.variables.diag_done = true;
-		return; }
-  let load = State.variables.stack[0];
+//DIRTY FUNCTION
+window.NextLine = function(){
+  if (State.variables.dialogue.length === 0){
+    // insert end dialogue conditions
+    return;
+  }
 
-  //replaces the current bubble
-  $.wiki(`<<nobr>><<append ".speech-container" t8n>>
+  let load = State.variables.dialogue[0];
+
+  $.wiki(`<<nobr>><<append ".passage" t8n>>
             <<speech "${load.speaker}">>
               ${load.text}
             <</speech>><br>
           <</append>><</nobr>>`
         );
-  State.variables.stack.shift(0,1);
+
+  State.variables.dialogue.shift(0,1);
 }
 
-//takes in the 'speech' text, and optionally, the speaker name. If no speaker is supplied, it's displayed as a thought or internal monologue
 setup.speech = function(text="", speaker="") {
 	//exits the function if there is no 'speech' data
 	if (text === "") {return "";}
 
   let legend = "";
 	let thought = "thought";
+  let img = "";
 
 	//decides whether it's a internal monologue, or external dialogue
 	if (speaker) {
 		legend = `<legend>${speaker}</legend>`;
 		thought = "";
+    img = `[img[${speaker}]]`
 	}
 
-	let output = `<div class="speech"><fieldset>${legend}`;
-	output += `<<include "${speaker}">>`
+	let output = `<div class="speech animated bounceInLeft"><fieldset>${legend}`;
+	output += img;
 	output += `<span class="speech-bubble ${thought}">`;
 	output += text;
 	output += `</span></fieldset></div>`;
@@ -110,3 +127,6 @@ Macro.add('scrolldown', {
 		}, Engine.minDomActionDelay);
 	}
 });
+
+
+console.log(State.variables.dialogue);

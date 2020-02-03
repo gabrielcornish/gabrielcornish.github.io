@@ -1,0 +1,99 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://fonts/Silver.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Speech.gd" type="Script" id=2]
+[ext_resource path="res://skull.png" type="Texture" id=3]
+[ext_resource path="res://speech_bubble.png" type="Texture" id=4]
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 96, 80 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 3 )
+region = Rect2( 96, 0, 96, 80 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 3 )
+region = Rect2( 192, 0, 96, 80 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 3 )
+region = Rect2( 288, 0, 96, 80 )
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ) ],
+"loop": true,
+"name": "default",
+"speed": 7.0
+} ]
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 128, 80 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 4 )
+region = Rect2( 128, 0, 128, 80 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 4 )
+region = Rect2( 256, 0, 128, 80 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 4 )
+region = Rect2( 384, 0, 128, 80 )
+
+[sub_resource type="SpriteFrames" id=11]
+animations = [ {
+"frames": [ SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="DynamicFont" id=2]
+size = 12
+use_mipmaps = true
+extra_spacing_char = 2
+font_data = ExtResource( 1 )
+
+[node name="Main World" type="Node2D"]
+
+[node name="Skull" type="AnimatedSprite" parent="."]
+position = Vector2( 36.17, 2.85499 )
+scale = Vector2( 0.625789, 0.625789 )
+frames = SubResource( 1 )
+frame = 2
+playing = true
+centered = false
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 66.195, 96.9056 )
+scale = Vector2( 1, 1 )
+frames = SubResource( 11 )
+playing = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 16.0809
+margin_top = 82.6019
+margin_right = 120.081
+margin_bottom = 128.602
+custom_fonts/normal_font = SubResource( 2 )
+custom_colors/default_color = Color( 0.113725, 0.168627, 0.32549, 1 )
+text = "Hey kiddo hear you failed at something today."
+scroll_active = false
+scroll_following = true
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpeechTimer" type="Timer" parent="RichTextLabel"]
+wait_time = 0.05
+autostart = true
+[connection signal="timeout" from="RichTextLabel/SpeechTimer" to="RichTextLabel" method="_on_SpeechTimer_timeout"]
