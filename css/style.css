@@ -1,0 +1,62 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+body{
+	background-color: #fff1e8;
+	margin: 0 auto;
+  	max-width: 50em;
+  	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  	line-height: 1.5;
+  	padding: 4em 1em;
+  	color: #5f574f;
+}
+
+a {
+  color: #29adff;
+  text-decoration: none;
+}
+
+h2{
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+img{
+	display: block;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.avatar{
+	width: 80px;
+	border-radius: 100%;
+	margin: auto;
+}
+
+.my-name{
+	display: block;
+	text-align: center;
+}
+
+.game-entry{
+	padding: 0em;
+	line-height: 1em;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr auto 1fr;
+	grid-template-areas: "h-card" "portfolio-area" "footer-area";
+	grid-row-gap: 3em;
+}
+
+.portfolio-area {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: ". . .";
+	grid-area: portfolio-area;
+	grid-column-gap: 2em;
+	grid-row-gap: 5em;
+}

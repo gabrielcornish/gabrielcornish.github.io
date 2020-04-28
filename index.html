@@ -1,122 +1,13 @@
 <!DOCTYPE html>
 <html>
-<style type="text/css">
-  @import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700|Quicksand:700&display=swap');
-  body{
-    background-color: #f1f1f1;
-    margin: 0 auto;
-    max-width: 50em;
-    line-height: 1.5;
-    padding: 4em 1em;
-    font-size: 16px;
-  }
-
-  h1,h2{
-    font-family: 'Quicksand', sans-serif;
-    color: #333;
-  }
-
-  p{
-    color: #555;
-    font-family: 'Lora', serif;
-  }
-
-  a{
-    font-family: 'Quicksand', sans-serif;
-    color: #29ADFF;
-    text-decoration: none;
-  }
-
-  i{
-    color: #BBB;
-  }
-
-  a i{
-    color: #29ADFF;
-    margin-right: 1em;
-  }
-
-  img{
-    display: block;
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 1em;
-  }
-
-  .u-photo{
-    border-radius: 50%;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .game-entry{
-    padding: 0em;
-    line-height: 1em;
-  }
-
-  .game-genre{
-    color: #999;
-  }
-
-  .browser-tag{
-    font-size: .75em;
-    padding: 2px 6px;
-    border-radius: 3px;
-    display: inline-block;
-    color: #FFF1E8;
-    background-color: #262626;
-    margin-top: 0em;
-    border: 1px solid #262626;
-  }
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto 1fr;
-    grid-template-areas: "h-card" "portfolio-area" "footer-area";
-    grid-row-gap: 3em;
-  }
-
-  .portfolio-area {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: ". . .";
-    grid-area: portfolio-area;
-    grid-column-gap: 2em;
-    grid-row-gap: 5em;
-  }
-
-  .footer-area { grid-area: footer-area; }
-
-  .h-card { 
-    display: grid;
-    grid-template-columns: 1fr 9fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "avatar" "content";
-    grid-area: h-card;
-    grid-column-gap: 1em;
-
-  }
-
-  .h-card h1{
-    margin: 0em;    
-  }
-
-  .h-card p{
-      margin-top: 0.2em;
-      margin-bottom: 0.5em;    
-    }
-</style>
-
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="authorization_endpoint" href="https://indieauth.com/auth">
   <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
-  <link rel="icon" href="avatar.jpg" />
-  <script src="https://kit.fontawesome.com/4fa13cb37b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" href="/images/avatar.jpg">
   <!-- replace the below link with what aperture.p3k.io gives you after signing-in.
     (Details: https://indieweb.org/Microsub#Getting_Started)
     In summary:
@@ -128,159 +19,22 @@
   <title>Gabriel Cornish</title>
 </head>
 <body>
-  <div class="grid-container">
-    <div class="h-card">
-      <img class="u-photo" src="http://gabrielcornish.com/images/avatar.jpg"/>
-      <div class="bio">
-        <a href="https://gabrielcornish.com" class="u-url"><h1>Gabriel Cornish</h1></a>
-        <p class="p-note">
-          I believe in creating cozy and playful experiences so that people can feel joy.<br><br> I approach every project with playfulness, enthusiasm and curiosity. I also prioritize ethical designs and development. I'm <span class="p-name">Gabriel Cornish</span> and this is my portfolio of games. I blog my thoughts <a href="http://blog.gabrielcornish.com">here</a>.<br><br>
-        </p>
-        <a href="mailto:gabrielcornish@gmail.com" target="_blank" class="u-email"><i class="far fa-envelope"></i></a> <a href="http://www.twitter.com/gabrielcornish"target="_blank" rel="me"><i class="fab fa-twitter"></i></a> <a href="https://github.com/gabrielcornish "target="_blank" rel="me"><i class="fab fa-github-alt"></i></a> <a href="https://gabrielcornish.itch.io/"target="_blank" rel="me"><i class="fab fa-itch-io"></i></a>
-      </div>
-      
-    </div>
-    <div class="portfolio-area">
-      <div class="game-entry">
-        <img src="images/pandapop.png">
-        <a href="https://www.jamcity.com/panda-pop/" target="_blank"><strong>Panda Pop</strong></a>
-        <p>Level Designer</p>
-        <p class="game-genre">Puzzle</p>
-        <i class="fab fa-apple"></i> <i class="fab fa-android"></i> <i class="fab fa-facebook-square"></i>
-      </div>
+  <img class="avatar" src="images/avatar.jpg">
+  <h1 class="my-name">Gabriel Cornish</h1>
+  <div class="h-card">
+    <p>
+      Hi, my name is <strong><span class="p-name">Gabriel Cornish</span></strong> and I'm a freelance game designer. I believe in designing fun and wholesome experiences so that people can feel joy.<br><br> I've been making games for close to a decade and I've worked on projects both <a href="http://www.harrypotterhogwartsmystery.com/">big</a> and <a href="https://gabrielcornish.itch.io/">small</a>. <br><br> In my free time I make text-adventures and participate in game jams. 
+    </p>
 
-      <div class="game-entry">
-        <img src="images/quidditch.png">
-        <a href="https://www.youtube.com/watch?v=JmTmU_XEI10" target="_blank"><strong>HPHM: Quidditch</strong></a>
-        <p>Feature Owner</p>
-        <p class="game-genre">Roleplaying Game</p>
-        <i class="fab fa-apple"></i> <i class="fab fa-android"></i>
-      </div>
+    <h2>Links</h2>
+    <ul>
+      <!-- replace _mytwitterid_ with your Twitter username (if you have one, if not, delete the <li>…</li>) -->
+      <li><a href="https://gabrielcornish.com">📰 Blog</a></li>
+      <li><a class="u-url" href="https://twitter.com/gabrielcornish" rel="me">🐦 Twitter</a></li>
+      <li><a href="portfolio/portfolio.html">🎮 Portfolio</a></li>
+      <li><a href="https://www.linkedin.com/in/gabriel-cornish-690b1642">👔 LinkedIn</a></li>
+    </ul>
 
-      <div class="game-entry">
-        <img src="images/hphm.png">
-        <a href="http://www.harrypotterhogwartsmystery.com/" target="_blank"><strong>Harry Potter Hogwarts Mystery</strong></a>
-        <p>Core Feature & Gameplay Designer</p>
-        <p class="game-genre">Roleplaying Game</p>
-        <i class="fab fa-apple"></i> <i class="fab fa-android"></i>
-      </div>
-
-      <div class="game-entry">
-        <img src="images/twist.png">
-        <a href="/"><strong>Twist</strong></a>
-        <p>Technical & Narrative Designer</p>
-        <p class="game-genre">Interactive Fiction</p>
-        <i class="fab fa-apple"></i> <i class="fab fa-android"></i>
-      </div>
-
-    <!--  <div class="game-entry">
-        <img src="images/hackerscave.gif">
-        <a href="https://gabrielcornish.itch.io/the-hackers-cave" target="_blank"><strong>The Hacker's Cave</strong></a>
-        <p>A short Twine Adventure</p>
-        <p class="game-genre">Interactive Fiction</p>
-        <i class="fab fa-html5"></i>
-      </div> -->
-
-      <div class="game-entry">
-        <img src="images/al.gif">
-        <a href="https://gabrielcornish.itch.io/al-a-choose-your-own-adventure" target="_blank"><strong>AL</strong></a>
-        <p>Ludum Dare 42 Entry</p>
-        <p class="game-genre">Interactive Fiction</p>
-        <i class="fab fa-html5"></i>
-      </div>
-
-      <div class="game-entry">
-        <img src="images/shootstuff.gif">
-        <a href="https://www.lexaloffle.com/bbs/?tid=3276" target="_blank"><strong>Shoot Stuff!</strong></a>
-        <p>An arcade game for Pico-8</p>
-        <p class="game-genre">Arcade Platformer</p>
-        <i class="fab fa-html5"></i>
-      </div>
-
-      <div class="game-entry">
-        <img src="images/drink.gif">
-        <a href="https://gabrielcornish.itch.io/drink" target="_blank"><strong>Drink</strong></a>
-        <p>A 1 Minute Puzzle Game</p>
-        <p class="game-genre">Puzzle</p>
-        <i class="fab fa-html5"></i>
-      </div>
-
-      <div class="game-entry">
-        <img src="images/amor_fati.gif">
-        <a href="https://gabrielcornish.itch.io/amor-fati" target="_blank"><strong>Amor Fati</strong></a>
-        <p>Ludum Dare 45 Entry</p>
-        <p class="game-genre">Clicker</p>
-        <i class="fab fa-html5"></i> <i class="fab fa-windows"></i> <i class="fab fa-linux"></i> <i class="fab fa-apple"></i>
-      </div>
-
-      <div class="game-entry">
-        <img src="images/grow_alt.png">
-        <a href="https://gabrielcornish.itch.io/crescere" target="_blank"><strong>CRESCERE</strong></a>
-        <p>Minimalist 1-button puzzle</p>
-        <p class="game-genre">Puzzle</p>
-        <i class="fab fa-html5"></i>
-      </div>
-
-      <div class="game-entry">
-        <img src="images/mix_and_jam_cover.gif">
-        <a href="https://gabrielcornish.itch.io/roll-em-up" target="_blank"><strong>Roll 'Em Up</strong></a>
-        <p>A Mix and Jam Game Jam Entry</p>
-        <p class="game-genre">Platformer</p>
-        <i class="fab fa-html5"></i>
-      </div>
-
-      <div class="game-entry">
-        <img src="images/cowboy_fps.gif">
-        <a href="https://www.dropbox.com/sh/rr2jmexr70d1uco/AAAREG2pFVf68aXu4r7TX2FXa?dl=0" target="_blank"><strong>Cactus Carnage</strong></a>
-        <p>Prototype</p>
-        <p class="game-genre">FPS</p>
-        <i class="fab fa-windows"></i> <i class="fab fa-apple"></i>
-      </div>
-
-      <div class="game-entry">
-        <img src="images/skull_slay.gif">
-        <a href="https://www.dropbox.com/sh/kflf5hp6miql3ri/AADtqFwd1kB1A_jiHSmYGntla?dl=0" target="_blank"><strong>Slay The Skull</strong></a>
-        <p>Prototype</p>
-        <p class="game-genre">Puzzle</p>
-        <i class="fab fa-windows"></i> <i class="fab fa-apple"></i>
-      </div>
-
-      <div class="game-entry">
-        <img src="images/land_pad.gif">
-        <a href="https://www.dropbox.com/sh/p81hqdq8c2i68ww/AACIJPUipwAPGJajZ5-OpwbMa?dl=0" target="_blank"><strong>Land On The Pad</strong></a>
-        <p>Prototype</p>
-        <p class="game-genre">Arcade</p>
-        <i class="fab fa-windows"></i> <i class="fab fa-apple"></i>
-      </div>
-
-      <div class="game-entry">
-        <img src="images/wsw.png">
-        <a href="games/_wall_street_wizards/index.html" target="_blank"><strong>Wall Street Wizards</strong></a>
-        <p>Prototype</p>
-        <p class="game-genre">Interactive Fiction</p>
-        <i class="fab fa-html5"></i>
-      </div>
-
-      <div class="game-entry">
-        <img src="images/brew_castles.gif">
-        <a href="games/_brew_castles/brew_castles.html" target="_blank"><strong>Brew Castles</strong></a>
-        <p>Prototype</p>
-        <p class="game-genre">Arcade</p>
-        <i class="fab fa-html5"></i>
-      </div>
-
-      <div class="game-entry">
-        <img src="images/slide.gif">
-        <a href="https://www.dropbox.com/sh/rlrdku4ao4nqkpk/AABLff4Uk0yBYgFpCIDqh873a?dl=0" target="_blank"><strong>Slide It In</strong></a>
-        <p>Prototype</p>
-        <p class="game-genre">Arcade</p>
-        <i class="fab fa-windows"></i>
-      </div>
-      
-    </div>
-    <div class="footer-area">
-      
-    </div>
   </div>
 </body>
 </html>
