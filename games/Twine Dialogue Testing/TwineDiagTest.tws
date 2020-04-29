@@ -1,215 +1,0 @@
-(dp0
-S'buildDestination'
-p1
-S''
-p2
-sS'saveDestination'
-p3
-VC:\u005cUsers\u005cgabri\u005cDocuments\u005cGitHub\u005cGames\u005cTwine Dialogue Testing\u005cTwineDiagTest.tws
-p4
-sS'metadata'
-p5
-(dp6
-sS'target'
-p7
-S'sugarcane'
-p8
-sS'storyPanel'
-p9
-(dp10
-S'widgets'
-p11
-(lp12
-(dp13
-S'selected'
-p14
-I01
-sS'pos'
-p15
-(lp16
-I750
-aI54
-asS'passage'
-p17
-(itiddlywiki
-Tiddler
-p18
-(dp20
-S'text'
-p21
-V> Speaker One\u000aI'm speaker one and this is what I'm saying.\u000a\u000a> Speaker Two\u000aAnd I'm speaker two. I speak more than the one before me.\u000aI can even speak two different paragraphs one after the other.\u000aAs long as they are separated by a newline.\u000a\u000aAnd this is what speaker-less text looks like.
-p22
-sS'title'
-p23
-VStart
-p24
-sS'modified'
-p25
-ctime
-struct_time
-p26
-((I2019
-I12
-I11
-I10
-I27
-I17
-I2
-I345
-I0
-tp27
-(dp28
-tp29
-Rp30
-sS'tags'
-p31
-(lp32
-sS'created'
-p33
-g26
-((I2019
-I12
-I11
-I10
-I9
-I18
-I2
-I345
-I0
-tp34
-(dp35
-tp36
-Rp37
-sbsa(dp38
-g14
-I00
-sg15
-(lp39
-I237
-aI59
-asg17
-(itiddlywiki
-Tiddler
-p40
-(dp41
-g21
-S'Untitled Story'
-p42
-sg23
-S'StoryTitle'
-p43
-sg25
-g26
-((I2019
-I12
-I11
-I10
-I9
-I18
-I2
-I345
-I0
-tp44
-(dp45
-tp46
-Rp47
-sg31
-(lp48
-sg33
-g47
-sbsa(dp49
-g14
-I00
-sg15
-(lp50
-I237
-aI199
-asg17
-(itiddlywiki
-Tiddler
-p51
-(dp52
-g21
-S'Anonymous'
-p53
-sg23
-S'StoryAuthor'
-p54
-sg25
-g26
-((I2019
-I12
-I11
-I10
-I9
-I18
-I2
-I345
-I0
-tp55
-(dp56
-tp57
-Rp58
-sg31
-(lp59
-sg33
-g58
-sbsa(dp60
-g14
-I00
-sg15
-(lp61
-I238
-aI346
-asg17
-(itiddlywiki
-Tiddler
-p62
-(dp63
-g21
-Vwindow.loadStory = function(p) {\u000a  let raw = Story.get(p).text.trim().split(/(?:\u005cr?\u005cn){2,}/);\u000a\u000a  for (let i = 0; i < raw.length; i++) {\u000a    let text = raw[i].split(/\u005cr?\u005cn/);\u000a\u000a    let speaker = "";\u000a\u000a    if (text[0].startsWith(">")) {\u000a      speaker = text[0].substring(1).trim();\u000a      text.splice(0,1);\u000a    }\u000a\u000a    for (let j = 0; j < text.length; j++) {\u000a      let obj = {speaker: speaker, text: text[j]};\u000a      State.variables.stack = [...State.variables.stack, obj];\u000a    }\u000a  }\u000a}
-p64
-sg23
-Vscript
-p65
-sg25
-g26
-((I2019
-I12
-I11
-I10
-I29
-I19
-I2
-I345
-I0
-tp66
-(dp67
-tp68
-Rp69
-sg31
-(lp70
-Vscript
-p71
-asg33
-g26
-((I2019
-I12
-I11
-I10
-I27
-I28
-I2
-I345
-I0
-tp72
-(dp73
-tp74
-Rp75
-sbsasS'scale'
-p76
-I1
-sS'snapping'
-p77
-I00
-ss.
