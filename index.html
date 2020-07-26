@@ -1,40 +1,81 @@
+
 <!DOCTYPE html>
 <html>
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
-  <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="icon" href="/images/avatar.jpg">
-  <!-- replace the below link with what aperture.p3k.io gives you after signing-in.
-    (Details: https://indieweb.org/Microsub#Getting_Started)
-    In summary:
-    1. sign in to https://aperture.p3k.io/login with your domain
-    2. you will see a <link> tag displayed on your dashboard
-    3. copy that <link> tag that looks like:
-      <link rel="microsub" href="https://aperture.p3k.io/microsub/000">
-      after this HTML comment. -->
-  <title>Gabriel Cornish</title>
-</head>
-<body>
-  <img class="avatar" src="images/avatar.jpg">
-  <h1 class="my-name">Gabriel Cornish</h1>
-  <div class="h-card">
-    <p>
-      Hi, my name is <strong><span class="p-name">Gabriel Cornish</span></strong> and I'm a freelance game designer. I believe in designing fun and wholesome experiences so that people can feel joy.<br><br> I've been making games for close to a decade and I've worked on projects both <a href="http://www.harrypotterhogwartsmystery.com/">big</a> and <a href="https://gabrielcornish.itch.io/">small</a>. <br><br> In my free time I make text-adventures and participate in game jams. 
-    </p>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+		<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+		<link rel="icon" href="/images/avatar.jpg">
+		<!-- replace the below link with what aperture.p3k.io gives you after signing-in.
+		(Details: https://indieweb.org/Microsub#Getting_Started)
+		In summary:
+		1. sign in to https://aperture.p3k.io/login with your domain
+		2. you will see a <link> tag displayed on your dashboard
+		3. copy that <link> tag that looks like:
+		  <link rel="microsub" href="https://aperture.p3k.io/microsub/000">
+		  after this HTML comment. -->
+		<title>Gabriel Cornish</title>
+		<style>
+			body {
+				max-width: 40%;
+				margin: auto;
+				margin-top: 2em;
+				font-family: Helvetica;
+				font-size: 20px;
+				line-height: 28px;
+				color: #231c33;
+			}
 
-    <h2>Links</h2>
-    <ul>
-      <!-- replace _mytwitterid_ with your Twitter username (if you have one, if not, delete the <li>…</li>) -->
-      <li><a href="https://gabrielcornish.micro.blog">📰 Blog</a></li>
-      <li><a class="u-url" href="https://twitter.com/gabrielcornish" rel="me">🐦 Twitter</a></li>
-      <li><a href="portfolio/portfolio.html">🎮 Portfolio</a></li>
-      <li><a href="https://www.linkedin.com/in/gabriel-cornish-690b1642">👔 LinkedIn</a></li>
-    </ul>
+			a {
+				color: #0074e4;
+				text-decoration: none;
+			}
+			hr {
+				border-top: 1px solid #0074e4;
+			}
 
-  </div>
-</body>
+			.avatar{
+				width: 64px;
+				border-radius: 100%;
+			}
+
+			.highlight{
+				background-color: #ff0;
+			}
+
+			.dt-published{
+				color: rgba(35, 28, 51, 0.66);
+				font-size: 18px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Gabriel Cornish</h1>
+<p>Hey!👋 <strong>Welcome to my corner of the web</strong>. A little about me:</p>
+<ul>
+<li>I make video games 🎮 for a living - Senior Game Designer at <a href="/">Paradox</a></li>
+<li>Journaling 📓 and doodling is my main hobby</li>
+<li>Most of what I read is philosophy and non-fiction</li>
+<li>Recently I've been curious about Solo Table Top RPG's 🧙‍♂️</li>
+</ul>
+<p>Feel free to browse my <a href="portfolio/index.html">portfolio of work</a>.</p>
+<hr>
+<h2>Things that get me excited...</h2>
+<p><strong class="highlight">Simple Websites</strong> - I've changed up my website so many times that I've lost track. However, each time it becomes more simple. <strong>I'm proud to say that this site is just good old fashioned HTML and CSS</strong>🤩!</p>
+<p><strong class="highlight">Game Development</strong> - <strong>I love being a game designer</strong>. These are a few of the projects I've worked on over the years:</p>
+<ul>
+<li><a href="/">Panda Pop</a></li>
+<li><a href="/">Harry Potter: Hogwarts Mystery</a></li>
+<li><a href="/">Handfull of Itch games and stuff</a></li>
+</ul>
+<hr>
+<div class="h-entry">
+				<a href="/notes/2020-07-16/"> <time class="dt-published">2020/07/16</time></a>
+				<div class="p-content">
+					<p>This is just a note that I made. I'm curious how this will be done. Thanks.</p>
+
+				</div>
+			</div></body>
 </html>
