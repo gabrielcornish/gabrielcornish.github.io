@@ -26,11 +26,12 @@
 
 
 	const BRICK_W = 80;
-	const BRICK_H = 40;
+	const BRICK_H = 20;
 	const BRICK_COLS = 10;
-	const BRICK_ROWS = 7;
+	const BRICK_ROWS = 14;
 	const BRICK_GAP = 2;
 	var brickGrid = new Array(BRICK_COLS * BRICK_ROWS);
+	var bricksRemaining = 0;
 
 	window.onload = function(){
 		canvas = document.getElementById('gameCanvas');
@@ -43,7 +44,7 @@
 		canvas.addEventListener('mousemove', updateMousePos);
 
 		brickReset();
-		// ballReset();
+		ballReset();
 	}
 
 	function updateAll(){
@@ -56,22 +57,37 @@
 		ballX += ballSpeedX;
 		ballY += ballSpeedY;
 
-		if(ballX > canvas.width){
+		if(ballX > canvas.width && ballSpeedX > 0.0){
 			ballSpeedX = -ballSpeedX;
 		}
 
-		if(ballX < 0){
+		if(ballX < 0 && ballSpeedX < 0.0){
 			ballSpeedX = -ballSpeedX;
 		}
 
-		if(ballY < 0){
+		if(ballY < 0 && ballSpeedY < 0.0){
 			ballSpeedY = -ballSpeedY;
 		}
 
 		if(ballY > canvas.height){
 			ballSpeedY = -ballSpeedY;
 			ballReset();
+			brickReset();
 		}
+	}
+
+	function isBrickAtColRow(col, row){
+		if(col >= 0 && col < BRICK_COLS &&
+			row >= 0 && row < BRICK_ROWS){
+
+			var brickIndexUnderCoord = rowColToArrayIndex(col, row);
+
+			return brickGrid[brickIndexUnderCoord];
+		} else{
+			return false;
+		}
+
+		
 	}
 
 	function ballBrickHandling(){
@@ -81,25 +97,42 @@
 
 		if(ballBrickCol >= 0 && ballBrickCol < BRICK_COLS && ballBrickRow >= 0 && ballBrickRow < BRICK_ROWS){
 
-			if(brickGrid[brickIndexUnderBall]){
+			if(isBrickAtColRow( ballBrickCol,ballBrickRow )){
 				brickGrid[brickIndexUnderBall] = false;
+				bricksRemaining--;
+				//console.log(bricksRemaining);
 
 				var prevBallX = ballX - ballSpeedX;
 				var prevBallY = ballY - ballSpeedY;
 				var prevBrickCol = Math.floor(prevBallX / BRICK_W);
 				var prevBrickRow = Math.floor(prevBallY / BRICK_H);
 
+				var bothTestsFailed = true;
+
 				if(prevBrickCol != ballBrickCol){
-					ballSpeedX *= -1;
+
+					if(isBrickAtColRow(prevBrickCol, ballBrickRow) == false){
+						ballSpeedX *= -1;
+						bothTestsFailed = false;
+					}
+					
 				}
 				if(prevBrickRow != ballBrickRow){
-					ballSpeedY *= -1;
+					var adjBrickTopBot = rowColToArrayIndex(ballBrickCol, prevBrickRow)
+
+					if(isBrickAtColRow(ballBrickCol, prevBrickRow) == false){
+						ballSpeedY *= -1;
+						bothTestsFailed = false;
+					}
 				}
 
-			}		
-
-		}
-	}
+				if(bothTestsFailed){ //armpit case
+					ballSpeedX *= -1;
+					ballSpeedY *= -1;
+				}
+			} // end of brick found		
+		} //end of valid col and row
+	} //end of ballBrickHandling function
 
 	function ballPaddleHandling(){
 		var paddleTopEdgeY = canvas.height-PADDLE_DIST_FROM_EDGE;
@@ -114,6 +147,10 @@
 			var centerOfPaddleX = paddleX + PADDLE_WIDTH/2;
 			var ballDistFromPaddleCenterX = ballX - centerOfPaddleX;
 			ballSpeedX = ballDistFromPaddleCenterX * 0.35;
+
+			if(bricksRemaining == 0){
+				brickReset();
+			} //out of bricks
 		}
 	}
 
@@ -128,23 +165,29 @@
 		colorRect(0,0,canvas.width,canvas.height,'black'); //clear screen
 		drawBricks();
 
-		colorCircle(ballX,ballY, 10, 'red'); //draw ball
+		colorCircle(ballX,ballY, 10, '#FF004D'); //draw ball
 
-		colorRect(paddleX,canvas.height-PADDLE_DIST_FROM_EDGE, PADDLE_WIDTH,PADDLE_THICKNESS,'white');
+		colorRect(paddleX,canvas.height-PADDLE_DIST_FROM_EDGE, PADDLE_WIDTH,PADDLE_THICKNESS,'#FFF1E8');
 
 		
 		var mouseBrickCol = Math.floor(mouseX / BRICK_W);
 		var mouseBrickRow = Math.floor(mouseY / BRICK_H);
 		var brickIndexUnderMouse = rowColToArrayIndex(mouseBrickCol, mouseBrickRow);
 		
-		colorText(mouseBrickCol+","+mouseBrickRow+':'+brickIndexUnderMouse, mouseX,mouseY, 'white');
+		//colorText(mouseBrickCol+","+mouseBrickRow+':'+brickIndexUnderMouse, mouseX,mouseY, 'white');
 
 
 	}
 
 	function brickReset(){
-		for (var eachCol = 0; eachCol < BRICK_COLS*BRICK_ROWS; eachCol++) {
+		bricksRemaining = 0;
+		for (var eachCol = 0; eachCol < 3 * BRICK_COLS; eachCol++) {
+			brickGrid[eachCol] = false;
+		}
+
+		for (var eachCol = 3 * BRICK_COLS; eachCol < BRICK_COLS*BRICK_ROWS; eachCol++) {
 			brickGrid[eachCol] = true;
+			bricksRemaining++;
 		}
 	}
 
@@ -160,7 +203,7 @@
 				var arrayIndex = BRICK_COLS * eachRow + eachCol;
 
 				if(brickGrid[arrayIndex]){
-					colorRect(BRICK_W*eachCol,BRICK_H*eachRow, BRICK_W-BRICK_GAP,BRICK_H-BRICK_GAP, 'blue');
+					colorRect(BRICK_W*eachCol,BRICK_H*eachRow, BRICK_W-BRICK_GAP,BRICK_H-BRICK_GAP, '#29ADFF');
 				}
 			}	
 		}	
@@ -192,10 +235,10 @@
 
 		paddleX = mouseX - PADDLE_WIDTH/2;
 
-		ballX = mouseX;
+		/*ballX = mouseX;
 		ballY = mouseY;
-		ballSpeedX = 3;
-		ballSpeedY = -4;
+		ballSpeedX = 4;
+		ballSpeedY = -4;*/
 	}
 
 	function ballReset(){
