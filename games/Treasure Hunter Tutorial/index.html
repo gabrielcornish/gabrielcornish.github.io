@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>New Game</title>
+</head>
+<body>
+	<script src="ga.js"></script>
+	<script src="plugins.js"></script>
+	<script type="text/javascript">
+		var g = ga(512,512,setup,["sounds/chimes.wav"]);
+		g.start();
+
+		var dungeon, player, treasure, enemies, chimes, exit, healthBar, message, gameScene, gameOverScene;
+
+		function setup(){
+			g.canvas.style.border = "1px black dashed";
+			g.backgroundColor = 'white';
+
+			chimes = g.sound('sounds/chimes.wav');
+
+			gameScene = g.group();
+
+			//The exit Door
+			exit = g.rectangle(48,48,'green');
+			exit.x = 8;
+			exit.y = 8;
+			gameScene.addChild(exit);
+
+			//The player Sprite
+			player = g.rectangle(32,32,'blue');
+			player.x = 68;
+			player.y = g.canvas.height/2 - player.halfHeight;
+			gameScene.addChild(player);
+
+			//Create the treasure Sprite
+			treasure = g.rectangle(16,16,'gold');
+			g.stage.putCenter(treasure,220,0);
+			treasure.pickedUp = false;
+			gameScene.addChild(treasure);
+
+			var numberOfEnemies = 6, spacing = 48, xOffset = 150, speed = 2, direction = 1;
+
+			enemies = [];
+
+			for (var i = 0; i < numberOfEnemies; i++) {
+				var enemy = g.rectangle(32,32,'red');
+				var x = spacing * i + xOffset;
+				var y = g.randomInt(0, g.canvas.height - enemy.height);
+
+				enemy.x = x;
+				enemy.y = y;
+
+				enemy.vy = speed * direction;
+
+				direction *= -1;
+
+				enemies.push(enemy);
+
+				//create Health bar
+				var outerBar = g.rectangle(128,16,'black');
+				var innerBar = g.rectangle(128,16,'yellowGreen');
+
+				healthBar = g.group(outerBar,innerBar);
+
+				healthBar.inner = innerBar;
+				healthBar.x = g.canvas.width - 148;
+				healthBar.y = 16;
+
+
+				//add some text for the game over message
+				message = g.text('Game Over!','64px Futura','black',20,20);
+				message.x = 120;
+				message.y = g.canvas.height / 2 - 64;
+
+				gameOverScene = g.group(message);
+				gameOverScene.visible = false;
+
+				//player input
+				g.fourKeyController(player,5,38,39,40,37);
+			}
+
+			g.state = play;
+		}
+
+		function play(){
+
+		}
+
+	</script>
+</body>
+</html>
