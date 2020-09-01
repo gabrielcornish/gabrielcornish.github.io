@@ -56,6 +56,7 @@
 				direction *= -1;
 
 				enemies.push(enemy);
+				gameScene.addChild(enemy);
 
 				//create Health bar
 				var outerBar = g.rectangle(128,16,'black');
@@ -66,6 +67,8 @@
 				healthBar.inner = innerBar;
 				healthBar.x = g.canvas.width - 148;
 				healthBar.y = 16;
+
+				gameScene.addChild(healthBar);
 
 
 				//add some text for the game over message
@@ -84,7 +87,54 @@
 		}
 
 		function play(){
+			g.move(player);
+			g.contain(player,g.stage.localBounds)
 
+			var playerHit = false;
+
+			enemies.forEach(function(enemy){
+				g.move(enemy);
+				var enemyHitsEdges = g.contain(enemy,g.stage.localBounds);
+				if(enemyHitsEdges == 'top' || enemyHitsEdges == 'bottom'){
+					enemy.vy *= -1;
+				}
+
+				if(g.hitTestRectangle(player,enemy)){
+					playerHit = true;
+				}
+			});
+
+			if(playerHit){
+				player.alpha = 0.5;
+				healthBar.inner.width -= 1;
+			} else {
+				player.alpha = 1;
+			}
+
+			if(g.hitTestRectangle(player,treasure)){
+				treasure.x = player.x + 8;
+				treasure.y = player.y + 8;
+
+				if(!treasure.pickedUp){
+					chimes.play();
+					treasure.pickedUp = true;
+				};
+			}
+
+			if(healthBar.inner.width < 0){
+				g.state = end;
+				message.content = "YOU LOST!";
+			}
+
+			if(g.hitTestRectangle(treasure, exit)){
+				g.state = end;
+				message.content = 'YOU WON!';
+			}
+		}
+
+		function end(){
+			gameScene.visible = false;
+			gameOverScene.visible = true;
 		}
 
 	</script>

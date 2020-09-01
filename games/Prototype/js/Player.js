@@ -1,13 +1,9 @@
-const PLAYER_WIDTH = 16;
-const PLAYER_HEIGHT = 16;
-const ANIMATION_DELAY = 5;
-
-var player;
-
 function playerClass(){
 	//Player Variables
 	this.x = 320;
 	this.y = 256;
+	this.width = 16;
+	this.height = 16;
 	this.speed = 5;
 
 	// Animation Variables
@@ -30,7 +26,7 @@ function playerClass(){
 	this.update = function(){
 		//console.log(this.x+"/"+this.y);
 		if(moveRight){
-			if(this.x < canvas.width - PLAYER_WIDTH){
+			if(this.x < canvas.width - this.width){
 				this.x += (this.speed);
 			}
 		}
@@ -45,7 +41,7 @@ function playerClass(){
 			}
 		}
 		if(moveDown){
-			if(this.y < canvas.height-PLAYER_HEIGHT){
+			if(this.y < canvas.height-this.height){
 				this.y += (this.speed);
 			}
 		}

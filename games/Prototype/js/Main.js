@@ -1,9 +1,12 @@
 const FPS = 60;
+const ANIMATION_DELAY = 5;
 
 var canvas;
 var canvasContext;
 
+var player;
 var enemy;
+var coin;
 
 window.onload = function(){
 	init();
@@ -22,12 +25,16 @@ function init(){
 
 	enemy = new enemyClass();
 
+	coin = new coinClass();
+	coin.initCoin();
+
 	console.log("Game Initialized");
 }
 
 function update(timeStamp){
 	player.update();
 	enemy.update();
+	//coin.update();
 	draw();
 }
 
@@ -35,4 +42,5 @@ function draw(){
 	cls();
 	player.draw();
 	enemy.draw();
+	coin.draw();
 }

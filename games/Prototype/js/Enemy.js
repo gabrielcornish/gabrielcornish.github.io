@@ -13,8 +13,9 @@ function enemyClass(){
 	}
 
 	this.update = function(){
-		this.playerCollision();
-		
+		var oldX = this.x;
+		var oldY = this.y;
+
 		if(this.x < 0){
 			this.speedX *= -1;
 		}
@@ -28,8 +29,17 @@ function enemyClass(){
 			this.speedY *= -1;
 		}
 
+		if(checkCollision(this,player)){
+			this.x = oldX;
+			this.y = oldY;
+			this.speedX *= -1;
+			this.speedY *= -1;
+		}
+
 		this.x += this.speedX;
 		this.y += this.speedY;
+
+
 
 	}
 
