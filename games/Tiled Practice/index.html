@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>New Game</title>
+</head>
+<body>
+	<script src="ga.js"></script>
+	<script src="plugins.js"></script>
+	<script type="text/javascript">
+	var g = ga(512, 512, setup, 
+	  [
+	    "maps/images/timeBombPanic.png",
+	    "maps/timeBombPanic.json"
+	  ]
+	);
+		g.start();
+
+		var player, world;
+
+		function setup(){
+			world = g.makeTiledWorld('maps/timeBombPanic.json','maps/images/timeBombPanic.png');
+			// initialize
+			g.state = play;
+		}
+		
+		function play(){
+			
+		}
+
+	</script>
+</body>
+</html>

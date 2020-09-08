@@ -24,6 +24,7 @@ function init(){
 	player.initPlayer();
 
 	enemy = new enemyClass();
+	enemy.init();
 
 	coin = new coinClass();
 	coin.initCoin();

@@ -1,14 +1,14 @@
 function playerClass(){
 	//Player Variables
-	this.x = 320;
-	this.y = 256;
-	this.width = 16;
-	this.height = 16;
+	this.x = 0;
+	this.y = 0;
+	this.width = 8;
+	this.height = 8;
 	this.speed = 5;
 
 	// Animation Variables
 	this.sprite = new Image();
-	this.animColumns = 4;
+	this.animColumns = 5;
 	this.animRows = 1;
 	this.frameWidth;
 	this.frameHeight;

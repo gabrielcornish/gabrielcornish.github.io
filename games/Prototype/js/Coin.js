@@ -8,7 +8,7 @@ function coinClass(){
 
 	// Animation Variables
 	this.sprite = new Image();
-	this.animColumns = 8;
+	this.animColumns = 4;
 	this.animRows = 1;
 	this.frameWidth;
 	this.frameHeight;
@@ -28,6 +28,11 @@ function coinClass(){
   }
 
   this.draw = function(){
-    animate(this);
+		if(checkCollision(this,player)){
+
+		} else{
+			animate(this);
+		}
+
   }
 }
