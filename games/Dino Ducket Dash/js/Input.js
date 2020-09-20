@@ -15,6 +15,9 @@ function initInput(){
 }
 
 function keyPressed(evt){
+	if(gameState == "menu"){
+		gameState = "game";
+	}
 	switch(evt.keyCode){
 		case KEY_W:
 			moveUp = true;

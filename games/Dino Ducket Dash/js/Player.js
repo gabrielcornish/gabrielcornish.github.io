@@ -5,6 +5,7 @@ function playerClass(){
 	this.width = 8;
 	this.height = 8;
 	this.speed = 5;
+	this.coinsCarried = 0;
 
 	// Animation Variables
 	this.sprite = new Image();
@@ -49,6 +50,8 @@ function playerClass(){
 
 	this.draw = function(){
 		//drawRect(this.x,this.y, this.sprite.width,this.sprite.height, 'white');
+		canvasContext.fillStyle = 'black';
+		canvasContext.fillText(this.coinsCarried, this.x+10,this.y-2);
 		animate(this);
 	}
 }

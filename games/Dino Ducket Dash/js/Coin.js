@@ -15,6 +15,7 @@ function coinClass(){
 	this.currentFrame = 0;
 	this.animationFrameDelay = ANIMATION_DELAY;
 	this.flipped = true;
+	this.readyToRemove = false;
 
 	this.initCoin = function(){
 		console.log(this.x+"/"+this.y);
@@ -29,7 +30,8 @@ function coinClass(){
 
   this.draw = function(){
 		if(checkCollision(this,player)){
-
+			this.readyToRemove = true;
+			player.coinsCarried++
 		} else{
 			animate(this);
 		}
