@@ -18,7 +18,7 @@ function coinClass(){
 	this.readyToRemove = false;
 
 	this.initCoin = function(){
-		console.log(this.x+"/"+this.y);
+		// console.log(this.x+"/"+this.y);
 		this.sprite.src = 'images/coin.png';
 		this.frameWidth = this.sprite.width / this.animColumns;
 		this.frameHeight = this.sprite.height / this.animRows;

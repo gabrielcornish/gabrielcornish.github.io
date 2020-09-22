@@ -8,7 +8,9 @@ var player;
 var enemy;
 var coinList = [];
 var menuSprite;
+var moneyBucket;
 var gameState = "menu";
+var score;
 
 window.onload = function(){
 	init();
@@ -30,6 +32,10 @@ function init(){
 	
 	menuSprite = new menuClass();
 	menuSprite.init();
+	
+	moneyBucket = new moneyBucketClass;
+	
+	score = 0;
 
 	for (var i = 0; i < 20; i++) {
 		var coin = new coinClass();
@@ -48,6 +54,7 @@ function update(){
 	} else{
 		player.update();
 		enemy.update();
+		moneyBucket.update();
 		
 		for (var i = 0; i < coinList.length; i++) {
 			if(coinList[i].readyToRemove){
@@ -68,6 +75,7 @@ function draw(){
 		for (var i = 0; i < coinList.length; i++) {
 			coinList[i].draw();
 		}
+		moneyBucket.draw();
 		player.draw();
 		enemy.draw();
 	}
