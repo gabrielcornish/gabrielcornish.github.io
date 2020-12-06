@@ -1,211 +1,170 @@
-
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-		<meta name="mobile-web-app-capable" content="yes" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="authorization_endpoint" href="https://indieauth.com/auth">
-		<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
-		<link rel="icon" href="/images/avatar.jpg">
-		<!-- replace the below link with what aperture.p3k.io gives you after signing-in.
-		(Details: https://indieweb.org/Microsub#Getting_Started)
-		In summary:
-		1. sign in to https://aperture.p3k.io/login with your domain
-		2. you will see a <link> tag displayed on your dashboard
-		3. copy that <link> tag that looks like:
-		  <link rel="microsub" href="https://aperture.p3k.io/microsub/000">
-		  after this HTML comment. -->
-		<title>Gabriel Cornish</title>
-		<style>
-			body {
-				max-width: 50em;
-				margin: auto;
-				margin-top: 2em;
-				font-family: Helvetica;
-				font-size: 1.250em;
-				line-height: 28px;
-				color: #231c33;
-			}
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+  <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+  <!-- replace the below link with what aperture.p3k.io gives you after signing-in.
+    (Details: https://indieweb.org/Microsub#Getting_Started)
+    In summary:
+    1. sign in to https://aperture.p3k.io/login with your domain
+    2. you will see a <link> tag displayed on your dashboard
+    3. copy that <link> tag that looks like:
+      <link rel="microsub" href="https://aperture.p3k.io/microsub/000">
+      after this HTML comment. -->
+  <title>Gabriel Cornish</title>
+  <style type="text/css">
+    @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+    body {
+      font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+      font-size: 20px;
+      margin: 0 auto;
+      max-width: 50em;
+      line-height: 1.5;
+      padding: 4em 1em;
+      color: #555;
+    }
 
-			a {
-				color: #0074e4;
-				text-decoration: none;
-			}
-			hr {
-				border-top: 1px solid #0074e4;
-			}
+    img{
+      max-width: 100%;
+    }
 
-			.avatar{
-				width: 64px;
-				border-radius: 100%;
-			}
+    a {
+      color: #e81c4f;
+    }
 
-			.highlight{
-				background-color: #ff0;
-			}
+    h2 {
+      margin-top: 1em;
+      padding-top: 1em;
+    }
 
-			.dt-published{
-				color: rgba(35, 28, 51, 0.66);
-				font-size: 18px;
-			}
-		</style>
-	</head>
-	<body>
-		<h1>Gabriel Cornish</h1>
-<p>Hi, I'm <a href="https://twitter.com/gabrielcornish" rel="me">Gabriel Cornish</a>. Welcome to my personal website. 👋</p>
-<p><mark>I'm a Senior Game Designer by day. By night, I make Freeware Games.</mark> I've been making games for close to a decade both as a professional and as a dedicated hobbiest. I believe in creating playful experiences so that people can feel joy. 🥰</p>
-<h2>What I'm doing:</h2>
-<ul>
-<li><a href="https://blog.gabrielcornish.com/">Micro Blogging</a> 📰</li>
-<li>Making Freeware Games 👾 at <a href="https://itch.io/c/188585/hometeam-gamedev">HomeTeam GameDev</a></li>
-<li>Designing games 🎮 at <a href="https://www.paradoxplaza.com/">Paradox Interactive</a></li>
-</ul>
-<h2>What I've done:</h2>
-<ul>
-<li>Designed levels, features and events for <a href="https://www.jamcity.com/panda-pop/">Panda Pop</a></li>
-<li>Designed Core Gameplay and Features for <a href="http://www.harrypotterhogwartsmystery.com/">Harry Potter: Hogwarts Mystery</a></li>
-<li>Created levels for <a href="https://www.jamcity.com/vineyard-valley/">Vineyard Valley</a></li>
-<li>Made a handful of Freeware Games. You can play them on <a href="https://gabrielcornish.itch.io/">itch.io</a></li>
-</ul>
-<p>For a full list of my work, browse my <a href="portfolio/index.html">portfolio</a>.</p>
+    h1,
+    h2,
+    strong {
+      color: #333;
+    }
 
+    #name{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 1fr);
+      gap: 0px 0px;
+      grid-template-areas: ". .";
+      max-width: 50%;
+    }
+    
+    #portfolio{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px 20px;
+      grid-template-areas: ". . .";
+    }
 
-		<!--<div class="h-entry">
-				<a href="/notes/2020-08-02/"> <time class="dt-published">2020/08/02</time></a>
-				<div class="p-content">
-					<style>
-	body {
-		max-width: 40%;
-		margin: auto;
-		margin-top: 2em;
-		font-family: Helvetica;
-		font-size: 20px;
-		line-height: 28px;
-		color: #231c33;
-	}
+    #avatar{
+      border-radius: 100%;
+      max-width: 128px;
+    }
+  </style>
+</head>
+<body>
+  <div id="name">
+    <img id="avatar" src="images/avatar.jpg"> 
+    <h1>Gabriel Cornish</h1>
+  </div>
+  
 
-	a {
-		color: #0074e4;
-		text-decoration: none;
-	}
-	hr {
-		border-top: 1px solid #0074e4;
-	}
+  <div class="h-card">
+    <br>
+    <p>
+      👋 Hi, I'm <span class="p-name"><strong>Gabriel Cornish</strong></span> and I am a <strong>Sr. Game Designer</strong>.<br><br> I believe in creating playful experiences so that people can feel joy. I approach every project with playfulness, enthusiasm and curiosity. <mark>I've designed levels, systems, narratives and gameplay features for games that have been played by millions of passionate players around the world</mark>. <br><br>Need a more technical designer? I'm can prototype gameplay and script in languages like <strong>C#, Python, and Javascript</strong>. In my spare time, you can catch me doing Freeware Game Development and participating in game jams.
+    </p>
 
-	.avatar{
-		width: 64px;
-		border-radius: 100%;
-	}
+    <h2>🖥️ Find Me Around The Net</h2>
 
-	.highlight{
-		background-color: #ff0;
-	}
+    <ul>
+      <li><a class="u-url" href="/" rel="me">Blog</a></li>
+      <li><a class="u-url" href="/" rel="me">Itch.io Games</a></li>
+      <li><a class="u-url" href="https://twitter.com/gabrielcornish" rel="me">@gabrielcornish</a></li>
+    </ul>
 
-	.dt-published{
-		color: rgba(35, 28, 51, 0.66);
-		font-size: 18px;
-	}
-</style>
+  </div>
 
-<div class="h-entry">
-	<div class="p-content">
-		<p>This week I finished up another classic game 👾: <a href="games/BrickBreaker/index.html">Brick Breaker</a>.</p>
+  <h2>🎮 Games & Projects I've Worked On</h2>
 
-	</div>
-</div>
+  <div id="portfolio">
+    <div class="game-card">
+      <img src="images/hphm.png">
+      <h3>Harry Potter Hogwarts Mystery</h3>
+      <p><strong>Senior Designer/Core Gameplay - </strong>HPHM is a mobile RPG set in the wizarding world of Harry Potter.</p>
+    </div>
 
-				</div>
-			</div><div class="h-entry">
-				<a href="/notes/2020-07-30/"> <time class="dt-published">2020/07/30</time></a>
-				<div class="p-content">
-					<style>
-	body {
-		max-width: 40%;
-		margin: auto;
-		margin-top: 2em;
-		font-family: Helvetica;
-		font-size: 20px;
-		line-height: 28px;
-		color: #231c33;
-	}
+    <div class="game-card">
+      <img src="https://i.ytimg.com/vi/JmTmU_XEI10/maxresdefault.jpg">
+      <h3>Hogwarts Mystery Quidditch</h3>
+      <p><strong>Feature Owner/Core Gameplay - </strong>Quidditch introduced a brand new narrative and gameplay mode in the mobile Harry Potter RPG.</p>
+    </div>
 
-	a {
-		color: #0074e4;
-		text-decoration: none;
-	}
-	hr {
-		border-top: 1px solid #0074e4;
-	}
+    <div class="game-card">
+      <img src="images/PandaPop.png">
+      <h3>Panda Pop</h3>
+      <p><strong>Level / Feature Designer - </strong>Strategically burst matching bubbles to beat the evil baboon & return the cubs to their worried mother!</p>
+    </div>
 
-	.avatar{
-		width: 64px;
-		border-radius: 100%;
-	}
+    <div class="game-card">
+      <img src="images/VineyardValley.jpg">
+      <h3>Vineyard Valley</h3>
+      <p><strong>Level Designer - </strong>Channel your inner designer and bring your vision to life as you transform a rundown vineyard into a vibrant resort!</p>
+    </div>
 
-	.highlight{
-		background-color: #ff0;
-	}
+    <div class="game-card">
+      <img src="images/AL.jpg">
+      <h3>AL</h3>
+      <p><strong>Narrative Designer - </strong>A goofy CYOA game made with some friends for Ludum Dare!</p>
+    </div>
 
-	.dt-published{
-		color: rgba(35, 28, 51, 0.66);
-		font-size: 18px;
-	}
-</style>
+    <div class="game-card">
+      <img src="images/DDD.jpg">
+      <h3>Dino Ducket Dash!</h3>
+      <p><strong>Project Lead/Core Gameplay - </strong>80s Arcade Action! Dodge dinosaurs, collect duckets and survive meteor showers.</p>
+    </div>
 
-<div class="h-entry">
-	<div class="p-content">
-		<p>I decided to get back to the <a href="https://www.udemy.com/course/code-your-first-game">fundamentals</a> with my game development 🕹️. So, I created <a href="games/Pong/index.html">Pong</a> using Javascript on Canvas. It's not perfect, but it was surprisingly difficult for me. Humbling as the experience was, it goes to show that it's never a bad idea to go back to basics.</p>
+    <div class="game-card">
+      <img src="images/ShootStuff.png">
+      <h3>Shoot Stuff!</h3>
+      <p><strong>Solo Developer - </strong>A retro arcade game where you shoot stuff and can finish in a single sitting!</p>
+    </div>
 
-	</div>
-</div>
+    <div class="game-card">
+      <img src="images/Drink.jpg">
+      <h3>Drink</h3>
+      <p><strong>Solo Delevoper - </strong>A 1-minute puzzle game about collecting water before a 100 year drought.</p>
+    </div>
 
-				</div>
-			</div><div class="h-entry">
-				<a href="/notes/2020-07-16/"> <time class="dt-published">2020/07/16</time></a>
-				<div class="p-content">
-					<style>
-	body {
-		max-width: 40%;
-		margin: auto;
-		margin-top: 2em;
-		font-family: Helvetica;
-		font-size: 20px;
-		line-height: 28px;
-		color: #231c33;
-	}
+    <div class="game-card">
+      <img src="images/AmorFati.png">
+      <h3>Amor Fati</h3>
+      <p><strong>Solo Delevoper - </strong>A feel-good micro game about what can be created from nothing. Made for Ludum Dare game jam.</p>
+    </div>
 
-	a {
-		color: #0074e4;
-		text-decoration: none;
-	}
-	hr {
-		border-top: 1px solid #0074e4;
-	}
+    <div class="game-card">
+      <img src="images/Marshmallow.jpg">
+      <h3>Marshmallow Nights</h3>
+      <p><strong>Solo Delevoper - </strong>Goof off and eat marshmallows with your friend in this micro-twine game.</p>
+    </div>
 
-	.avatar{
-		width: 64px;
-		border-radius: 100%;
-	}
+    <div class="game-card">
+      <img src="images/Springfield.jpg">
+      <h3>Springfield Property Manager</h3>
+      <p><strong>Contributing Delevoper - </strong>A property management simulation game created by HomeTeam GameDev.</p>
+    </div>
 
-	.highlight{
-		background-color: #ff0;
-	}
+    <div class="game-card">
+      <img src="images/HackersCave.jpg">
+      <h3>The Hacker's Cave</h3>
+      <p><strong>Solo Delevoper/Narrative Designer - </strong>A short distopian twine adventure.</p>
+    </div>
 
-	.dt-published{
-		color: rgba(35, 28, 51, 0.66);
-		font-size: 18px;
-	}
-</style>
-
-<div class="h-entry">
-	<div class="p-content">
-		<p>Hello world!</p>
-
-	</div>
-</div>
-
-				</div>
-			</div>-->
-	</body>
+  </div>
+</body>
 </html>
