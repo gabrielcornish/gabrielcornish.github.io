@@ -1,182 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
-  <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
-  <!-- replace the below link with what aperture.p3k.io gives you after signing-in.
-    (Details: https://indieweb.org/Microsub#Getting_Started)
-    In summary:
-    1. sign in to https://aperture.p3k.io/login with your domain
-    2. you will see a <link> tag displayed on your dashboard
-    3. copy that <link> tag that looks like:
-      <link rel="microsub" href="https://aperture.p3k.io/microsub/000">
-      after this HTML comment. -->
-  <title>Gabriel Cornish | Sr. Game Designer</title>
-  <style type="text/css">
-    @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
-    body {
-      font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-      font-size: 20px;
-      margin: 0 auto;
-      max-width: 50em;
-      line-height: 1.5;
-      padding: 4em 1em;
-      color: #555;
-    }
-
-    img{
-      max-width: 100%;
-    }
-
-    a {
-      color: #e81c4f;
-    }
-
-    h2 {
-      margin-top: 1em;
-      padding-top: 1em;
-    }
-
-    h1,
-    h2,
-    strong {
-      color: #333;
-    }
-
-    #name{
-      display: grid;
-      grid-template-columns: repeat(auto-fit, 1fr);
-      gap: 0px 0px;
-      grid-template-areas: ". .";
-      max-width: 50%;
-    }
-    
-    #portfolio{
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px 20px;
-      grid-template-areas: ". . .";
-    }
-
-    #avatar{
-      border-radius: 100%;
-      max-width: 128px;
-    }
-  </style>
+<title>Gabriel Cornish</title>
+<link rel="icon" href="./images/favicon.png" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link href="./style/style.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body>
-  <div id="name">
-    <img id="avatar" src="images/avatar.jpg"> 
-    <h1>Gabriel Cornish</h1>
-  </div>
-  
+<div id="container">
+<header id="header">
 
-  <div class="h-card">
-    <br>
-    <p>
-      👋 Hi, I'm <span class="p-name"><strong>Gabriel Cornish</strong></span> and I am a <strong>Sr. Game Designer</strong>.<br><br> I believe in creating playful experiences so that people can feel joy. I approach every project with playfulness, enthusiasm and curiosity. <mark>I've designed levels, systems, narratives and gameplay features for games that have been played by millions of passionate players around the world</mark>. <br><br>Need a more technical designer? I can prototype gameplay and script in languages like <strong>C#, Python, and Javascript</strong>. In my spare time, you can catch me doing Freeware Game Development and participating in game jams.
-    </p>
-
-    <h2>🖥️ Find Me Around The Net</h2>
-
-    <ul>
-      <li><a class="u-url" href="https://blog.gabrielcornish.com/" rel="me">Blog</a></li>
-      <li><a class="u-url" href="https://gabrielcornish.itch.io/" rel="me">Itch.io Games</a></li>
-      <li><a class="u-url" href="https://twitter.com/gabrielcornish" rel="me">@gabrielcornish</a></li>
-    </ul>
-
-  </div>
-
-  <h2>🎮 Games & Projects I've Worked On</h2>
-
-  <div id="portfolio">
-    <div class="game-card">
-      <img src="images/hphm.png">
-      <h3>Harry Potter Hogwarts Mystery</h3>
-      <p><strong>Senior Designer/Core Gameplay - </strong>HPHM is a mobile RPG set in the wizarding world of Harry Potter.</p>
-    </div>
-
-    <div class="game-card">
-      <img src="https://i.ytimg.com/vi/JmTmU_XEI10/maxresdefault.jpg">
-      <h3>Hogwarts Mystery Quidditch</h3>
-      <p><strong>Feature Owner/Core Gameplay - </strong>Quidditch introduced a brand new narrative and gameplay mode in the mobile Harry Potter RPG.</p>
-    </div>
-
-    <div class="game-card">
-      <img src="images/pandapop.png">
-      <h3>Panda Pop</h3>
-      <p><strong>Level / Feature Designer - </strong>Strategically burst matching bubbles to beat the evil baboon & return the cubs to their worried mother!</p>
-    </div>
-
-    <div class="game-card">
-      <img src="images/VineyardValley.jpg">
-      <h3>Vineyard Valley</h3>
-      <p><strong>Level Designer - </strong>Channel your inner designer and bring your vision to life as you transform a rundown vineyard into a vibrant resort!</p>
-    </div>
-
-    <div class="game-card">
-      <img src="images/AL.jpg">
-      <h3>AL</h3>
-      <p><strong>Narrative Designer - </strong>A goofy CYOA game made with some friends for Ludum Dare!</p>
-    </div>
-
-    <div class="game-card">
-      <img src="images/DDD.jpg">
-      <h3>Dino Ducket Dash!</h3>
-      <p><strong>Project Lead/Core Gameplay - </strong>80s Arcade Action! Dodge dinosaurs, collect duckets and survive meteor showers.</p>
-    </div>
-
-    <div class="game-card">
-      <img src="images/ShootStuff.png">
-      <h3>Shoot Stuff!</h3>
-      <p><strong>Solo Developer - </strong>A retro arcade game where you shoot stuff and can finish in a single sitting!</p>
-    </div>
-
-    <div class="game-card">
-      <img src="images/Drink.jpg">
-      <h3>Drink</h3>
-      <p><strong>Solo Developer - </strong>A 1-minute puzzle game about collecting water before a 100 year drought.</p>
-    </div>
-
-    <div class="game-card">
-      <img src="images/AmorFati.png">
-      <h3>Amor Fati</h3>
-      <p><strong>Solo Developer - </strong>A feel-good micro game about what can be created from nothing. Made for Ludum Dare game jam.</p>
-    </div>
-
-    <div class="game-card">
-      <img src="images/Marshmallow.jpg">
-      <h3>Marshmallow Nights</h3>
-      <p><strong>Solo Developer - </strong>Goof off and eat marshmallows with your friend in this micro-twine game.</p>
-    </div>
-
-    <div class="game-card">
-      <img src="images/Springfield.jpg">
-      <h3>Springfield Property Manager</h3>
-      <p><strong>Contributing Developer - </strong>A property management simulation game created by HomeTeam GameDev.</p>
-    </div>
-
-    <div class="game-card">
-      <img src="images/HackersCave.jpg">
-      <h3>The Hacker's Cave</h3>
-      <p><strong>Solo Developer/Narrative Designer - </strong>A short dystopian twine adventure.</p>
-    </div>
-
-    <div class="game-card">
-      <img src="images/TimeCannon.jpg">
-      <h3>Time Canon</h3>
-      <p><strong>Contributing Developer - </strong>Control time! Stop an invasion!</p>
-    </div>
-
-    <div class="game-card">
-      <img src="images/Mobius.jpg">
-      <h3>Mobius Inversion</h3>
-      <p><strong>Contributing Developer - </strong>A Space Schmup.</p>
-    </div>
-
-  </div>
+<p><img id="profile-pic" src="./images/favicon.png" width="32"> <h1 id="header-name"> Gabriel Cornish </h1>
+<p id="summary">Senior Game Designer with 10+ years of experience. Player-driven, team-focused.</p>
+<ul>
+<li><a href="./index.html">Home</a></li>
+<li><a href="./about.html">About</a></li>
+<li><a href="https://gabrielcornish.itch.io/">Games</a></li>
+<li><a href="./archive.html">Blog</a></li>
+<li><a href="./feed.xml">RSS</a></li>
+</ul>
+<hr>
+<br>
+</header>
+<article id="content">
+<p><strong>What's New:</strong></p>
+<ul>
+<li><img src="./images/joy.gif" style="width: 24px !important"> I'm actively looking for my next project! <a href="https://www.linkedin.com/in/gabrielcornish">Reach out</a> if you're in need of an experienced game designer.</li>
+</ul>
+<br>
+<hr>
+<br>
+<h2 style="text-align: center !important;"> PROFESSIONAL PROJECTS </h2>
+<h3>Life By You (Cancelled) - Senior Game Designer</h3>
+<p><img src="./images/lby-keyart.jpg" alt="Life By You Key Art">
+<br><br><br></p>
+<h3>Vineyard Valley - Level Designer (contract)</h3>
+<p><img src="./images/vineyard-valley-keyart.jpg" alt="Quidditch Key Art">
+<br><br><br></p>
+<h3>Harry Potter Hogwarts Mystery - Senior Game Designer</h3>
+<p><img src="./images/quidditch-keyart.jpg" alt="Quidditch Key Art">
+<br><br><br></p>
+<h3>Twist - Narrative Designer</h3>
+<p><img src="./images/twist-keyart.jpg" alt="Quidditch Key Art">
+<br><br><br></p>
+<h3>Panda Pop - Game Designer</h3>
+<p><img src="./images/panda-pop-keyart.png" alt="Quidditch Key Art">
+<br><br><br></p>
+</article>
+<footer id="footer">
+<hr>
+<p>This website was created the old-school way by <a href="https://twitter.com/gabecornish">Gabriel Cornish</a>!</p>
+</footer>
+</div>
 </body>
 </html>
