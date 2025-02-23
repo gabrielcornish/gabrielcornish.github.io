@@ -5,10 +5,21 @@
   <description>is loving the independent web</description>
   <link>https://gabrielcornish.com/</link>
   <atom:link href="https://gabrielcornish.com/feed.xml" rel="self" type="application/rss+xml" />
-  <lastBuildDate>Sun, 23 Feb 2025 11:20:46 -0800</lastBuildDate>
+  <lastBuildDate>Sun, 23 Feb 2025 13:28:46 -0800</lastBuildDate>
   <ttl>60</ttl>
 
 <!-- ADD NEW POST HERE -->
+
+  <item>
+    <title></title>
+    <description>
+<![CDATA[<p>For those who love RSS as much as I do, definitely check out <a href="https://adamledoux.net/zoneRSS/">zoneRSS</a>. It&#39;s such a fun way to blog.</p>
+]]>
+    </description>
+    <pubDate>Sun, 23 Feb 2025 13:28:46 -0800</pubDate>
+    <link>https://gabrielcornish.com/feed.html?post=4</link>
+    <guid isPermaLink="false">https://gabrielcornish.com/feed.xml#4</guid>
+  </item>
 
   <item>
     <title></title>
