@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog Post</title> <!-- If you leave title as "Blog Post", it will automatically be updated to the post title -->
+    <link rel="icon" href="../images/favicon.png" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> 
+    <link href="../style/style.css" rel="stylesheet" type="text/css" media="all">    
+  </head>
+  <body>
+    <div id="container">
+    <div id="header">...</div>
+    <div id="content">
+      <h1 id="postTitleH1"></h1>
+      <h4 id="postDate"></h4>
+      
+      <p>🕹 Unemployed as a game developer? Here's how I'm staying on track and keeping my spirits up.</p>
+<p>I've crafted a simple daily routine that's been essential for my mental well-being and productivity during this period.</p>
+<ul>
+<li>Mornings: Create 🎨</li>
+<li>Mid-days: Connect 📨</li>
+<li>Afternoons: ​Contribute 🙌🏽</li>
+</ul>
+<p><img src="../images/unemployed-routine.jpg" alt="Unemployed Routine"></p>
+<p><strong>CREATE</strong>: This is all about building skills and creative growth.</p>
+<p>While the timing of my next opportunity is uncertain, I'm making the most of this time by exploring new technologies, building games, and honing my craft.</p>
+<p><strong>CONNECT</strong>: This phase is all about maximizing opportunities.</p>
+<p>Whether it's reaching out to my network, applying for roles, or sharing my latest work, I'm just trying to keep the momentum going.</p>
+<p><strong>CONTRIBUTE</strong>: Giving back to the community is key.</p>
+<p>Whether it's helping others in their job search, collaborating on indie projects, or participating in game jams, assisting others is how we're all going to get through this.</p>
+<p>🌟 And here's one last bonus...</p>
+<p><strong>EVENINGS</strong>: Community​ Evenings are dedicated to recharging with loved ones. It's my time to unplug, rest, and cherish moments with friends and family.</p>
+<p>I'd love to hear what strategies have been working for you as you navigate your job search.</p>
+      
+      
+    <div id="nextprev"></div>
+    </div> <!-- end of div id="content" -->
+    <div id="footer"></div>
+    </div> <!-- end of div id="container" -->
+  <!-- Here's the link to our JavaScript! -->
+  <script src="../script.js"></script>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
