@@ -2,13 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>Gabriel Cornish</title>
-  <description>Gabriel Cornish's posts and updates</description>
+  <description>is loving the independent web</description>
   <link>https://gabrielcornish.com/</link>
   <atom:link href="https://gabrielcornish.com/feed.xml" rel="self" type="application/rss+xml" />
-  <lastBuildDate>Sat, 22 Feb 2025 21:59:19 -0800</lastBuildDate>
+  <lastBuildDate>Sun, 23 Feb 2025 11:20:46 -0800</lastBuildDate>
   <ttl>60</ttl>
 
 <!-- ADD NEW POST HERE -->
+
+  <item>
+    <title></title>
+    <description>
+<![CDATA[<p>I want the future of social media to just be RSS and email.</p>]]>
+    </description>
+    <pubDate>Sun, 23 Feb 2025 11:20:46 -0800</pubDate>
+    <link>https://gabrielcornish.com/feed.html?post=3</link>
+    <guid isPermaLink="false">https://gabrielcornish.com/feed.xml#3</guid>
+  </item>
+
+  <item>
+    <title>What Exactly Is a "Good" Game?</title>
+    <description>
+<![CDATA[<p>I&#39;ve always struggled with the desire to make something that is considered &quot;good&quot;—and to do it consistently.</p>
+<p>The problem is, &quot;good&quot; is subjective.</p>
+<p>This led me to discover one of my toxic traits: I want the subjective to become objective. I&#39;m always searching for a reproducible and systematic approach to the creative process. I like things to be clear and straightforward.</p>
+<p>It&#39;s flawed thinking, but I believed that if I could define what a good game was, then I could deconstruct the process and make one consistently.</p>
+<p>A definition eluded me for a long time, but I eventually stumbled upon one that I feel good about:</p>
+<blockquote>
+<p>A game is only as good as the promises it keeps.</p>
+</blockquote>
+<p>I came across this idea in one of the best blog posts I’ve read on game creation: </p>
+<p><a href="https://farawaytimes.blogspot.com/2023/02/how-to-make-good-small-games.html">How to Make Good Small Games.</a></p>
+<p>After reading it, I realized that a game gets to define its own terms of success. It does this by making promises to the player—and then keeping them.</p>
+<p>A game should be judged by how well it keeps its promises. Does it deliver what it says it will?</p>
+<p>Making a game that costs half a billion dollars and takes ten years to develop is a type of promise with high expectations. It’s a hard promise to keep. Alternatively, a 5-minute game with amateur art can still be good as long as it delivers on its promises—a much easier promise to keep.</p>
+<p>So, I think I’ve found a good balance between a subjective and objective definition of what makes a good game:</p>
+<blockquote>
+<p>A good game keeps its promises to the player.</p>
+</blockquote>
+]]>
+    </description>
+    <pubDate>Sun, 23 Feb 2025 11:17:15 -0800</pubDate>
+    <link>https://gabrielcornish.com/posts/2025-02-23-What-Exactly-Is-a--Good--Game-.html</link>
+    <guid isPermaLink="false">https://gabrielcornish.com/feed.xml#2</guid>
+  </item>
 
   <item>
     <title></title>
@@ -18,10 +55,12 @@
 <p>Reward them for their effort.</p>
 <p>Tell them when they've achieved something.</p>]]>
     </description>
-    <pubDate>Sat, 22 Feb 2025 21:59:19 -0800</pubDate>
-    <link>https://gabrielcornish.com/posts/2025-02-22-.html</link>
+    <pubDate>Sun, 23 Feb 2025 10:34:28 -0800</pubDate>
+    <link>https://gabrielcornish.com/feed.html?post=1</link>
     <guid isPermaLink="false">https://gabrielcornish.com/feed.xml#1</guid>
   </item>
+
+  
 
   <item>
     <title>A Daily Routine For Unemployed Game Devs</title>

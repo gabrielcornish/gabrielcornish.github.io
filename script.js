@@ -14,8 +14,8 @@
 
 //==[ 1. BASIC INFO ]==
 
-let blogName = "This site";
-let authorName = "Gabriel Cornish (A Human)";
+let blogName = "this site";
+let authorName = "gabriel cornish";
 let authorLink = ""; // Enter your website, social media, etc. Some way for people to tell you they like your blog! (Leaving it empty is okay too)
 
 //-----------------------------
@@ -155,7 +155,8 @@ if ( url.includes("posts/") ) {
 //Generate the Header HTML, a series of list items containing links.
 let headerHTML = '<ul> <li><a href="' + relativePath + '/index.html">Home</a></li>' + 
 '<li><a href="' + relativePath + '/feed.html">Posts</a></li>' +
-'<li><a href="' + relativePath + '/about.html">About</a></li> </ul>';
+'<li><a href="' + relativePath + '/about.html">About</a></li>' + 
+'<li><a href="' + relativePath + '/feed.xml">RSS</a></li> </ul>';
 
 //Generate the Footer HTML, which uses the variables defined in the BASIC INFO section above to list info about the site.
 //Note: feel free to remove the references to Zonelets and Neocities! Just be careful not to delete any necessary HTML closing tags or other syntax.
