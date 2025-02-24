@@ -5,10 +5,31 @@
   <description>is loving the independent web</description>
   <link>https://gabrielcornish.com/</link>
   <atom:link href="https://gabrielcornish.com/feed.xml" rel="self" type="application/rss+xml" />
-  <lastBuildDate>Sun, 23 Feb 2025 13:28:46 -0800</lastBuildDate>
+  <lastBuildDate>Sun, 23 Feb 2025 16:58:20 -0800</lastBuildDate>
   <ttl>60</ttl>
 
 <!-- ADD NEW POST HERE -->
+
+  <item>
+    <title></title>
+    <description>
+<![CDATA[<p>Friday nights in 2005:</p>
+<ul>
+<li>Vanilla Coke</li>
+<li>Digiorno Supreme Pizza</li>
+<li>Battlefront 2 (PS2) with friends</li>
+</ul>
+<p>Friday nights 2025:</p>
+<ul>
+<li>Ginger tea</li>
+<li>Intermittent fasting</li>
+<li>An episode of Ugly Betty with wife</li>
+</ul>]]>
+    </description>
+    <pubDate>Sun, 23 Feb 2025 16:58:20 -0800</pubDate>
+    <link>https://gabrielcornish.com/feed.html?post=5</link>
+    <guid isPermaLink="false">https://gabrielcornish.com/feed.xml#5</guid>
+  </item>
 
   <item>
     <title></title>
