@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog Post</title> <!-- If you leave title as "Blog Post", it will automatically be updated to the post title -->
+    <link rel="icon" href="../images/favicon.png" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> 
+    <link href="../style/style.css" rel="stylesheet" type="text/css" media="all">   
+    <link href="../feed.xml" rel="alternate" type="application/rss+xml" title="Gabriel Cornish"> 
+  </head>
+  <body>
+    <div id="container">
+    <div id="header">...</div>
+    <div id="content">
+      <h1 id="postTitleH1"></h1>
+      <h4 id="postDate"></h4>
+      
+      <p>Can I make my first Steam game in one year?</p>
+<p>I&#39;ve always wanted to.</p>
+<p>So, this year I started making a game about exploring a mall. In the game you buy gifts for friends, discover secrets, and meet other quirky shoppers.</p>
+<p>I&#39;ve worked in the game industry for over 10 years, but I&#39;ve never released a Steam game on my own. It&#39;s been on my bucket list for a while, but never quite had the confidence to do it.</p>
+<p>In some ways, I still don&#39;t.</p>
+<p>Well, this year I chose to take a crack at it.</p>
+<p>I&#39;m not one of those indies who&#39;s trying to strike it rich or make my &quot;dream&quot; game. Gambling in Las Vegas would be a more efficient way to make money.</p>
+<p>No, I just want to make something that is worth charging for.</p>
+<p>A game that&#39;s small, focused, and delivers a fun experience worth the asking price.</p>
+<p>I want to <a href="https://gabrielcornish.com/posts/2025-02-23-What-Exactly-Is-a--Good--Game-.html">make small promises to my players</a>, and then fulfill them. Plus a little extra.</p>
+<p>Nothing more. Nothing less.</p>
+<p>I started prototyping the game in January and hope to release in January 2026.</p>
+<p>I&#39;ll let you know how it goes.</p>
+
+      
+      
+    <div id="nextprev"></div>
+    </div> <!-- end of div id="content" -->
+    <div id="footer"></div>
+    </div> <!-- end of div id="container" -->
+  <!-- Here's the link to our JavaScript! -->
+  <script src="../script.js"></script>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
