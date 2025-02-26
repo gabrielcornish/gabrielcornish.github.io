@@ -5,10 +5,23 @@
   <description>is loving the independent web</description>
   <link>https://gabrielcornish.com/</link>
   <atom:link href="https://gabrielcornish.com/feed.xml" rel="self" type="application/rss+xml" />
-  <lastBuildDate>Tue, 25 Feb 2025 07:59:01 -0800</lastBuildDate>
+  <lastBuildDate>Wed, 26 Feb 2025 11:42:58 -0800</lastBuildDate>
   <ttl>60</ttl>
 
 <!-- ADD NEW POST HERE -->
+
+  <item>
+    <title></title>
+    <description>
+<![CDATA[<blockquote>
+<p>&quot;No matter how good you get, you&#39;re always gonna think that you should be better than you are...&quot; <br><br> - Dan Harmon</p>
+</blockquote>
+<p>This rang true for me. It feels like vision is always ahead of execution.</p>]]>
+    </description>
+    <pubDate>Wed, 26 Feb 2025 11:42:58 -0800</pubDate>
+    <link>https://gabrielcornish.com/feed.html?post=8</link>
+    <guid isPermaLink="false">https://gabrielcornish.com/feed.xml#8</guid>
+  </item>
 
   <item>
     <title>I'm making a game about exploring a small mall</title>
