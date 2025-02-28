@@ -5,10 +5,20 @@
   <description>is loving the independent web</description>
   <link>https://gabrielcornish.com/</link>
   <atom:link href="https://gabrielcornish.com/feed.xml" rel="self" type="application/rss+xml" />
-  <lastBuildDate>Wed, 26 Feb 2025 11:42:58 -0800</lastBuildDate>
+  <lastBuildDate>Thu, 27 Feb 2025 18:17:31 -0800</lastBuildDate>
   <ttl>60</ttl>
 
 <!-- ADD NEW POST HERE -->
+
+  <item>
+    <title></title>
+    <description>
+<![CDATA[🕹️ I'm positive that if I never bought another video game for the rest of my life, there is enough in my library to last two lifetimes.]]>
+    </description>
+    <pubDate>Thu, 27 Feb 2025 18:17:31 -0800</pubDate>
+    <link>https://gabrielcornish.com/feed.html?post=9</link>
+    <guid isPermaLink="false">https://gabrielcornish.com/feed.xml#9</guid>
+  </item>
 
   <item>
     <title></title>
