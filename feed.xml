@@ -5,10 +5,23 @@
   <description>is loving the independent web</description>
   <link>https://gabrielcornish.com/</link>
   <atom:link href="https://gabrielcornish.com/feed.xml" rel="self" type="application/rss+xml" />
-  <lastBuildDate>Thu, 27 Feb 2025 18:17:31 -0800</lastBuildDate>
+  <lastBuildDate>Fri, 28 Feb 2025 18:55:04 -0800</lastBuildDate>
   <ttl>60</ttl>
 
 <!-- ADD NEW POST HERE -->
+
+  <item>
+    <title></title>
+    <description>
+<![CDATA[<p>I&#39;ve made a mental shift that has me blog a lot more lately.</p>
+<p>The realization was simple.</p>
+<p>Write to myself. Write for myself.</p>
+<p>It&#39;s been great and I feel like I&#39;m in a better headspace.</p>]]>
+    </description>
+    <pubDate>Fri, 28 Feb 2025 18:55:04 -0800</pubDate>
+    <link>https://gabrielcornish.com/feed.html?post=10</link>
+    <guid isPermaLink="false">https://gabrielcornish.com/feed.xml#10</guid>
+  </item>
 
   <item>
     <title></title>
