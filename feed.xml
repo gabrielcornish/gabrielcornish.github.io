@@ -5,10 +5,23 @@
   <description>is loving the independent web</description>
   <link>https://gabrielcornish.com/</link>
   <atom:link href="https://gabrielcornish.com/feed.xml" rel="self" type="application/rss+xml" />
-  <lastBuildDate>Fri, 28 Feb 2025 18:55:04 -0800</lastBuildDate>
+  <lastBuildDate>Sat, 15 Mar 2025 17:00:03 -0700</lastBuildDate>
   <ttl>60</ttl>
 
 <!-- ADD NEW POST HERE -->
+
+  <item>
+    <title></title>
+    <description>
+<![CDATA[<p>🕹️ Game design isn&#39;t that complicated.</p>
+<p>Players just need 4 things in order to have fun: </p>
+<p>Purpose, motivation, agency, and clarity.</p>
+<p>If a game isn&#39;t fun, one of those elements is lacking.</p>]]>
+    </description>
+    <pubDate>Sat, 15 Mar 2025 17:00:03 -0700</pubDate>
+    <link>https://gabrielcornish.com/feed.html?post=11</link>
+    <guid isPermaLink="false">https://gabrielcornish.com/feed.xml#11</guid>
+  </item>
 
   <item>
     <title></title>
