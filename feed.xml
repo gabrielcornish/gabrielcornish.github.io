@@ -5,10 +5,21 @@
   <description>is loving the independent web</description>
   <link>https://gabrielcornish.com/</link>
   <atom:link href="https://gabrielcornish.com/feed.xml" rel="self" type="application/rss+xml" />
-  <lastBuildDate>Sun, 16 Mar 2025 14:34:48 -0700</lastBuildDate>
+  <lastBuildDate>Fri, 23 May 2025 16:11:54 -0700</lastBuildDate>
   <ttl>60</ttl>
 
 <!-- ADD NEW POST HERE -->
+
+  <item>
+    <title></title>
+    <description>
+<![CDATA[<p>I wish HTML was a person so I could just hug it and give it all the appreciation it deserves.</p>
+]]>
+    </description>
+    <pubDate>Fri, 23 May 2025 16:11:54 -0700</pubDate>
+    <link>https://gabrielcornish.com/feed.html?post=13</link>
+    <guid isPermaLink="false">https://gabrielcornish.com/feed.xml#13</guid>
+  </item>
 
   <item>
     <title></title>
